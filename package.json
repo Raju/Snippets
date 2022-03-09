@@ -1,0 +1,52 @@
+{
+	"name": "snippetz",
+	"displayName": "React Snippets",
+	"description": "Essential collection of commonly used Snippets for ReactJS.",
+	"version": "1.0.0",
+	"publisher": "rajudhami",
+	"icon": "images/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Raju/Snippets"
+	},
+"keywords": [
+	"React",
+	"React TypeScript",
+	"React Snippets",
+	"React Code Snippets",
+	"React TypeScript Snippets",
+	"React TypeScript Code Snippets",
+	"ReactJS",
+	"ReactJS TypeScript",
+	"ReactJS Snippets",
+	"ReactJS Code Snippets",
+	"ReactJS TypeScript Snippets",
+	"ReactJS TypeScript Code Snippets"
+],
+	"engines": {
+		"vscode": "^1.65.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascriptreact.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/javascriptreact.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/javascriptreact.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/javascriptreact.code-snippets"
+			}
+		]
+	}
+}

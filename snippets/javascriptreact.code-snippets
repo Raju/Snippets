@@ -1,0 +1,401 @@
+{
+	"Import React": {
+		"prefix": "imr",
+		"body": [
+			"import React from 'react';\n"
+		],
+		"description": "Import React"
+	},
+	"Import ReactDOM": {
+		"prefix": "imrd",
+		"body": [
+			"import ReactDOM from 'react-dom';\n"
+		],
+		"description": "Import ReactDOM"
+	},
+	"Import React, { useState }": {
+		"prefix": "imrs",
+		"body": [
+			"import React, { useState } from 'react';\n"
+		],
+		"description": "Import React, { useState }"
+	},
+	"Import React, { useEffect }": {
+		"prefix": "imre",
+		"body": [
+			"import React, { useEffect } from 'react';\n"
+		],
+		"description": "Import React, { useEffect }"
+	},
+	"Import React, { useState, useEffect }": {
+		"prefix": "imrse",
+		"body": [
+			"import React, { useState, useEffect } from 'react';\n"
+		],
+		"description": "Import React, { useState, useEffect }"
+	},
+	"Import React, { useEffect, useState }": {
+		"prefix": "imres",
+		"body": [
+			"import React, { useState, useEffect } from 'react';\n"
+		],
+		"description": "Import React, { useState, useEffect }"
+	},
+	"Import PropTypes": {
+		"prefix": "imrpt",
+		"body": [
+			"import PropTypes from 'prop-types';\n"
+		],
+		"description": "Import PropTypes"
+	},
+	"Import React and Component": {
+		"prefix": "imrc",
+		"body": [
+			"import React, { Component } from 'react';\n"
+		],
+		"description": "Import React, { Component }"
+	},
+	"Import React and Pure Component": {
+		"prefix": "imrpc",
+		"body": [
+			"import React, { PureComponent } from 'react';\n"
+		],
+		"description": "Import React, { PureComponent }"
+	},
+	"Import CSS / SCSS file": {
+		"prefix": "imrcss",
+		"body": [
+			"import '${1:./index}.${2:}css';\n$0"
+		],
+		"description": "Import CSS / SCSS file"
+	},
+	"Import Component file": {
+		"prefix": "imrcom",
+		"body": [
+			"import ${1:App} from './${1:App}';\n$0"
+		],
+		"description": "Import Component file"
+	},
+	"ReactDOM Render": {
+		"prefix": "rdr",
+		"body": [
+			"ReactDOM.render (",
+			"\t<React.StrictMode>",
+			"\t\t<App />",
+			"\t</React.StrictMode>,",
+			"\tdocument.getElementById ( `root` ),",
+			");"
+		],
+		"description": "Add ReactDOM Render"
+	},
+	"React useState": {
+		"prefix": "rus",
+		"body": [
+			"const [ ${1:state}, set${1/(.*)/${1:/capitalize}/} ] = useState ( ${2:initialState} );\n",
+			"$0"
+		],
+		"description": "Add React useState Hook & press Tab to apply camelCase [state, setState]"
+	},
+	"React useEffect": {
+		"prefix": "rue",
+		"body": [
+			"useEffect ( () => {",
+			"\t( async () => {",
+			"\t\ttry {",
+			"\t\t\tconst ${2:response} = await ${3:``}\n",
+			"\t\t\tconsole.log ( ${4:response} );\n",
+			"\t\t\t$0",
+			"\t\t} catch ( error ) {",
+			"\t\t\tconsole.log ( error );",
+			"\t\t}",
+			"\t} ) ()",
+			"}, [ ${1:dependencies} ] );",
+		],
+		"description": "Add React useEffect Hook"
+	},
+	"Add Functional Component Boilerplate": {
+		"prefix": "rfcb",
+		"body": [
+			"import React, { useState, useEffect } from 'react';",
+			"import PropTypes from 'prop-types';\n",
+			"const ${1:${TM_FILENAME_BASE}} = ($2) => {",
+			"\tconsole.log ( `${1:${TM_FILENAME_BASE}} works!` );\n",
+			"\tconst [ ${3:state}, set${3/(.*)/${1:/capitalize}/} ] = useState ( ${4:initialState} );\n",
+			"\tuseEffect ( () => {",
+			"\t\t( async () => {",
+			"\t\t\ttry {",
+			"\t\t\t\tconst ${6:response} = await ${7:``};\n",
+			"\t\t\t\t$8",
+			"\t\t\t} catch ( error ) {",
+			"\t\t\t\tconsole.log ( error );",
+			"\t\t\t}",
+			"\t\t} ) ()",
+			"\t}, [ ${5:dependencies} ] );\n",
+			"\treturn (",
+			"\t\t<>",
+			"\t\t\t${9:<p>react snippet works!</p>}$0",
+			"\t\t</>",
+			"\t);",
+			"}\n",
+			"${1:${TM_FILENAME_BASE}}.propTypes = {",
+			"\t${10:state} : PropTypes.${11:string.isRequired}",
+			"};\n",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "Add Functional Component Boilerplate"
+	},
+	"Add Functional Component": {
+		"prefix": "rfc",
+		"body": [
+			"const ${1:${TM_FILENAME_BASE}} = ($2) => {",
+			"\tconsole.log ( `react snippet works!` );\n",
+			"\treturn (",
+			"\t\t<>",
+			"\t\t\t${0:<p>react snippet works!</p>}",
+			"\t\t</>",
+			"\t);",
+			"}\n",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "Add Functional Component"
+	},
+	"Stateless Function Component": {
+		"prefix": "sfc",
+		"body": [
+			"const $1 = ($2) => {",
+			"\treturn ( $0 );",
+			"}",
+			" ",
+			"export default $1;"
+		],
+		"description": "Stateless Function Component"
+	},
+	"Add Class Component Boilerplate": {
+		"prefix": "rccb",
+		"body": [
+			"import React, { Component } from 'react';",
+			"import PropTypes from 'prop-types';\n",
+			"class ${1:${TM_FILENAME_BASE}} extends Component {",
+			"\tconstructor ( props ) {",
+			"\t\tsuper ( props );\n",
+			"\t\tthis.state = {",
+			"\t\t\t${2:name}: ${3:`React Snippets`}",
+			"\t\t};",
+			"\t}\n",
+			"\tcomponentDidMount() { // Runs after the first render () lifecycle.",
+			"\t\t( async () => {",
+			"\t\t\ttry {",
+			"\t\t\t\tconst ${4:response} = await ${5:``};\n",
+			"\t\t\t\tthis.setState( {",
+			"\t\t\t\t\t\t${6:name}: ${7:response}",
+			"\t\t\t\t} );",
+			"\t\t\t} catch ( error ) {",
+			"\t\t\t\tconsole.log ( error );",
+			"\t\t\t}",
+			"\t\t} ) ()",
+			"\t}\n",
+			"\tshouldComponentUpdate ( nextProps, nextState ) { // Change in props & state should trigger a re-render.",
+			"\t\tconsole.log ( nextProps, nextState );\n",
+			"\t\treturn true; // When false, componentDidUpdate will not be called",
+			"\t}\n",
+			"\tcomponentDidUpdate ( prevProps, prevState, snapshot ) { // Called immediately after updating occurs. Not called for the initial render.",
+			"\t\tconsole.log ( prevProps, prevState, snapshot );",
+			"\t}\n",
+			"\tcomponentWillUnmount () { // Perform any necessary cleanup.",
+			"\t\treturn;",
+			"\t}\n",
+			"\trender () {",
+			"\t\tconsole.log ( `react snippet works!` );\n",
+			"\t\treturn (",
+			"\t\t\t<>",
+			"\t\t\t\t${8:<p>react snippet works!</p>}$0",
+			"\t\t\t</>",
+			"\t\t);",
+			"\t}",
+			"}\n",
+			"${1:${TM_FILENAME_BASE}}.propTypes = {",
+			"\t${9:state} : PropTypes.${10:string.isRequired}",
+			"};\n",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "Add Class Component Boilerplate"
+	},
+	"Add Class Component": {
+		"prefix": "rcc",
+		"body": [
+			"class ${1:${TM_FILENAME_BASE}} extends Component {",
+			"\trender () {",
+			"\t\tconsole.log ( `react snippet works!` );\n",
+			"\t\treturn (",
+			"\t\t\t<>",
+			"\t\t\t\t${0:<p>react snippet works!</p>}",
+			"\t\t\t</>",
+			"\t\t);",
+			"\t}",
+			"}\n",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "Add Class Component"
+	},
+	"setState": {
+		"prefix": "rss",
+		"body": [
+			"this.setState ( {",
+			"\t${1:name}: ${2:`React Snippets`},$0",
+			"} );"
+		],
+		"description": "Add setState Object"
+	},
+	"Functional setState": {
+		"prefix": "rssf",
+		"body": [
+			"this.setState ( prevState => {",
+			"\treturn { $1 : prevState.$1 };",
+			"});"
+		],
+		"description": "Add Functional setState"
+	},
+	"Add constructor () to Class Component": {
+		"prefix": "rcon",
+		"body": [
+			"constructor ( props ) {",
+			"\tsuper ( props );\n",
+			"\tthis.state = {",
+			"\t\t${2:name}: ${3:`React Snippets`}",
+			"\t};",
+			"}\n\n$0",
+		],
+		"description": "Add constructor () to Class Component"
+	},
+	"getDerivedStateFromProps": {
+		"prefix": "rdsp",
+		"body": [
+			"static getDerivedStateFromProps ( props, state ) {",
+			"\tconsole.log ( props, state );$0",
+			"}"
+		],
+		"description": "Add getDerivedStateFromProps () to Class Component"
+	},
+	"Add render () to Class Component": {
+		"prefix": "rren",
+		"body": [
+			"render () {",
+			"\tconsole.log ( `react snippet works!` );\n",
+			"\treturn (",
+			"\t\t<>",
+			"\t\t\t${0:<p>react snippet works!</p>}",
+			"\t\t</>",
+			"\t);",
+			"}\n",
+		],
+		"description": "Add render () to Class Component"
+	},
+	"componentDidMount": {
+		"prefix": "rcdm",
+		"body": [
+			"componentDidMount() {",
+			"\t( async () => {",
+			"\t\ttry {",
+			"\t\t\tconst ${1:response} = await ${2:``};\n",
+			"\t\t\tthis.setState( {",
+			"\t\t\t\t${3:name}: ${4:response}",
+			"\t\t\t} );$0",
+			"\t\t} catch ( error ) {",
+			"\t\t\tconsole.log ( error );",
+			"\t\t}",
+			"\t} ) ()",
+			"}\n",
+		],
+		"description": "Add componentDidMount () to Class Component"
+	},
+	"shouldComponentUpdate": {
+		"prefix": "rscu",
+		"body": [
+			"shouldComponentUpdate ( nextProps, nextState ) {",
+			"\tconsole.log ( nextProps, nextState );$0\n",
+			"\treturn true; // When false, componentDidUpdate will not be called",
+			"}\n",
+		],
+		"description": "Add shouldComponentUpdate () to Class Component"
+	},
+	"getSnapshotBeforeUpdate": {
+		"prefix": "rsbu",
+		"body": [
+			"getSnapshotBeforeUpdate ( prevProps, prevState ) {",
+			"\tconsole.log ( prevProps, prevState );$0",
+			"}"
+		],
+		"description": "Add getSnapshotBeforeUpdate () to Class Component"
+	},
+	"componentDidUpdate": {
+		"prefix": "rcdu",
+		"body": [
+			"componentDidUpdate ( prevProps, prevState, snapshot ) {",
+			"\tconsole.log ( prevProps, prevState, snapshot );$0",
+			"}\n",
+		],
+		"description": "Add componentDidUpdate () to Class Component"
+	},
+	"componentWillUnmount": {
+		"prefix": "rcwu",
+		"body": [
+			"componentWillUnmount () {",
+			"\treturn $0;",
+			"}\n",
+		],
+		"description": "Add componentWillUnmount () to Class Component"
+	},
+	"getDerivedStateFromError": {
+		"prefix": "rdse",
+		"body": [
+			"static getDerivedStateFromError ( error ) {",
+			"\tconsole.log ( error );$0",
+			"}"
+		],
+		"description": "Add getDerivedStateFromError () to Class Component"
+	},
+	"componentDidCatch": {
+		"prefix": "rcdc",
+		"body": [
+			"componentDidCatch ( error, info ) {",
+			"\tconsole.log ( error, info );$0",
+			"}"
+		],
+		"description": "Add componentDidCatch () to Class Component"
+	},
+	"Add ErrorBoundary Component Boilerplate": {
+		"prefix": "recb",
+		"body": [
+			"import React, { Component } from 'react';\n",
+			"class ${1:ErrorBoundary} extends Component {",
+			"\tconstructor ( props ) {",
+			"\t\tsuper ( props );\n",
+			"\t\tthis.state = {",
+			"\t\t\t${2:hasError}: ${4:false},",
+			"\t\t\t${3:error}: ${5:null}",
+			"\t\t};",
+			"\t}\n",
+			"\tshouldComponentUpdate ( nextProps, nextState ) {",
+			"\t\tconsole.log ( nextProps, nextState );\n",
+			"\t\treturn true;",
+			"\t}\n",
+			"\tcomponentDidCatch ( error, errorInfo ) {",
+			"\t\tconsole.log ( error, errorInfo );",
+			"\t}\n",
+			"\tstatic getDerivedStateFromError ( error ) {",
+			"\t\treturn {",
+			"\t\t\t${2:hasError}: ${6:true},",
+			"\t\t\t${3:error}: ${7:error}",
+			"\t\t};",
+			"\t}\n",
+			"\trender () {",
+			"\t\tconsole.log ( `react snippet works!` );\n",
+			"\t\tconst { state : { hasError, error }, props : { children } } = this;\n",
+			"\t\treturn hasError ? <h1>{ error } Error loading component!</h1> : children;$0",
+			"\t}",
+			"}\n",
+			"export default ${1:ErrorBoundary};"
+		],
+		"description": "Add ErrorBoundary Component Boilerplate"
+	},
+}
