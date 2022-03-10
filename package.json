@@ -2,7 +2,7 @@
 	"name": "snippetz",
 	"displayName": "React Snippets",
 	"description": "Essential collection of commonly used Snippets for ReactJS.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "rajudhami",
 	"icon": "images/icon.png",
 	"repository": {

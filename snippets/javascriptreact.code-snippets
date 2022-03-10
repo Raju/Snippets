@@ -62,6 +62,13 @@
 		],
 		"description": "Import React, { PureComponent }"
 	},
+	"Import React and Memo": {
+		"prefix": "imrm",
+		"body": [
+			"import React, { memo } from 'react';\n"
+		],
+		"description": "Import React, { memo }"
+	},
 	"Import CSS / SCSS file": {
 		"prefix": "imrcss",
 		"body": [
@@ -158,17 +165,6 @@
 			"export default ${1:${TM_FILENAME_BASE}};"
 		],
 		"description": "Add Functional Component"
-	},
-	"Stateless Function Component": {
-		"prefix": "sfc",
-		"body": [
-			"const $1 = ($2) => {",
-			"\treturn ( $0 );",
-			"}",
-			" ",
-			"export default $1;"
-		],
-		"description": "Stateless Function Component"
 	},
 	"Add Class Component Boilerplate": {
 		"prefix": "rccb",
