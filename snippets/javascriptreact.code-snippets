@@ -322,6 +322,83 @@
 		],
 		"description": "Add React useEffect Hook"
 	},
+	"React useContext": {
+		"prefix": "ruc",
+		"body": [
+			"const ${1:context} = useContext ( ${2:contextValue } );",
+			"$0"
+		],
+		"description": "Add React useContext hook"
+	},
+	"React useReducer": {
+		"prefix": "rur",
+		"body": [
+			"const [ state, dispatch ] = useReducer ( ${1:reducer}, ${2:initialState}, ${3:init} );",
+			"$0"
+		],
+		"description": "Add React useReducer hook"
+	},
+	"React useCallback": {
+		"prefix": "rucb",
+		"body": [
+			"useCallback (",
+			"\t() => {",
+			"\t\t${1:callback}",
+			"\t},",
+			"\t[ ${2:input} ],",
+			");"
+		],
+		"description": "Add React useCallback hook"
+	},
+	"React useMemo": {
+		"prefix": "rum",
+		"body": [
+			"useMemo ( () => ${1:function}, ${2:input} );",
+			"$0"
+		],
+		"description": "Add React useMemo hook"
+	},
+	"React useRef": {
+		"prefix": "rurf",
+		"body": [
+			"const ${1:ref} = useRef ();",
+			"$0"
+		],
+		"description": "Add React useRef hook"
+	},
+	"React useImperativeHandle": {
+		"prefix": "rui",
+		"body": [
+			"useImperativeHandle (",
+			"\t${1:ref},",
+			"\t() => {",
+			"\t\t${2:handler}",
+			"\t},",
+			"\t[ ${3:input} ],",
+			");"
+		],
+		"description": "Add React useImperativeHandle hook"
+	},
+	"React useDebugValue": {
+		"prefix": "rud",
+		"body": [
+			"useDebugValue ( ${1:value} );",
+			"$0"
+		],
+		"description": "Add React useDebugValue hook"
+	},
+	"React useLayoutEffect": {
+		"prefix": "rul",
+		"body": [
+			"useLayoutEffect ( () => {",
+			"\t${1:effect}",
+			"\treturn () => {",
+			"\t\t${2:cleanup}",
+			"\t};",
+			"}, [ ${3:input} ] );"
+		],
+		"description": "Add React useLayoutEffect hook"
+	},
 	"Add Functional Component Boilerplate": {
 		"prefix": "rfcb",
 		"body": [

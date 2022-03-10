@@ -2,9 +2,10 @@
 Essential collection of commonly used Snippets for ReactJS.
 
 # What's New
+
 ```shell
-[1.0.1]
-- Added more commonly used ReactJS Snippets such as imports, Hooks, ReactDOM and more.
+[1.0.2]
+- Added ReactJS Hooks Snippets.
 - We will add more snippets in the future release.
 ```
 
@@ -25,7 +26,9 @@ ext install rajudhami.snippetz
 ```
 
 # Snippets
+
 React Import Snippets and it's Output.
+
 | Prefix                | Output							                                          |
 | :-----------------    | ------------------------------------------------------------- |
 | `imr`                 | import React from 'react';                                    |
@@ -47,6 +50,7 @@ React Import Snippets and it's Output.
 | `imrsm`               | import React, { StrictMode } from 'react';                    |
 
 ReactDOM Import Snippets and it's Output.
+
 | Prefix                | Output							                                          |
 | :-----------------    | ------------------------------------------------------------- |
 | `imrd`                | import ReactDOM from 'react-dom';                             |
@@ -57,11 +61,13 @@ ReactDOM Import Snippets and it's Output.
 | `imrdf`               | import ReactDOM, { findDOMNode } from 'react-dom';            |
 
 PropTypes Import Snippets and it's Output.
+
 | Prefix                | Output							                                          |
 | :-----------------    | ------------------------------------------------------------- |
 | `imrpt`               | import PropTypes from 'prop-types';                           |
 
 React Hooks Import Snippets and it's Output.
+
 | Prefix                | Output							                                          |
 | :-----------------    | ------------------------------------------------------------- |
 | `imrus`               | import React, { useState } from 'react';                      |
@@ -77,6 +83,7 @@ React Hooks Import Snippets and it's Output.
 | `imrud`               | import React, { useDebugValue } from 'react';                 |
 
 Custom Import Snippets and it's Output.
+
 | Prefix                | Output							                                          |
 | :-----------------    | ------------------------------------------------------------- |
 | `imrcss`              | import './index.css';                                         |
@@ -84,11 +91,20 @@ Custom Import Snippets and it's Output.
 | `imrcom`              | import App from './App';                                      |
 
 Code Snippets and it's Output.
+
 | Prefix  | Output                                                                   |
 | :------ | ------------------------------------------------------------------------ |
 | `rdr`   | Add ReactDOM Render                                                      |
 | `rus`   | Add React useState Hook & press Tab to apply camelCase [state, setState] |
 | `rue`   | Add React useEffect Hook                                                 |
+| `ruc`   | Add React useContext Hook                                                |
+| `rur`   | Add React useReducer Hook                                                |
+| `rucb`  | Add React useCallback Hook                                               |
+| `rum`   | Add React useMemo Hook                                                   |
+| `rurf`  | Add React useRef Hook                                                    |
+| `rui`   | Add React useImperativeHandle Hook                                       |
+| `rud`   | Add React useDebugValue Hook                                             |
+| `rul`   | Add React useLayoutEffect Hook                                           |
 | `rfcb`  | Add Functional Component Boilerplate                                     |
 | `rfc`   | Add Functional Component                                                 |
 | `rccb`  | Add Class Component Boilerplate                                          |
@@ -108,7 +124,12 @@ Code Snippets and it's Output.
 | `recb`  | Add ErrorBoundary Component Boilerplate																	 |
 
 # Change Log
+
 ```shell
+## [1.0.2]
+- Added ReactJS Hooks Snippets.
+- We will add more snippets in the future release.
+
 [1.0.1]
 - Added more commonly used ReactJS Snippets such as imports, Hooks, ReactDOM and more.
 - We will add more snippets in the future release.
