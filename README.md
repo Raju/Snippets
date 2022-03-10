@@ -1,6 +1,11 @@
 # ReactJS Snippets
+Essential collection of commonly used Snippets for ReactJS.
+
+# What's New
 ```shell
-Essential collection of commonly used Snippets for ReactJS. We will be adding more snippets in the future release.
+[1.0.1]
+- Added more commonly used ReactJS Snippets such as imports, Hooks, ReactDOM and more.
+- We will add more snippets in the future release.
 ```
 
 # Installation
@@ -20,10 +25,7 @@ ext install rajudhami.snippetz
 ```
 
 # Snippets
-```shell
 React Import Snippets and it's Output.
-```
-
 | Prefix                | Output							                                          |
 | :-----------------    | ------------------------------------------------------------- |
 | `imr`                 | import React from 'react';                                    |
@@ -44,10 +46,7 @@ React Import Snippets and it's Output.
 | `imrch`               | import React, { Children } from 'react';                      |
 | `imrsm`               | import React, { StrictMode } from 'react';                    |
 
-```shell
 ReactDOM Import Snippets and it's Output.
-```
-
 | Prefix                | Output							                                          |
 | :-----------------    | ------------------------------------------------------------- |
 | `imrd`                | import ReactDOM from 'react-dom';                             |
@@ -57,18 +56,12 @@ ReactDOM Import Snippets and it's Output.
 | `imrdu`               | import ReactDOM, { unmountComponentAtNode } from 'react-dom'; |
 | `imrdf`               | import ReactDOM, { findDOMNode } from 'react-dom';            |
 
-```shell
 PropTypes Import Snippets and it's Output.
-```
-
 | Prefix                | Output							                                          |
 | :-----------------    | ------------------------------------------------------------- |
 | `imrpt`               | import PropTypes from 'prop-types';                           |
 
-```shell
 React Hooks Import Snippets and it's Output.
-```
-
 | Prefix                | Output							                                          |
 | :-----------------    | ------------------------------------------------------------- |
 | `imrus`               | import React, { useState } from 'react';                      |
@@ -83,20 +76,14 @@ React Hooks Import Snippets and it's Output.
 | `imrul`               | import React, { useLayoutEffect } from 'react';               |
 | `imrud`               | import React, { useDebugValue } from 'react';                 |
 
-```shell
 Custom Import Snippets and it's Output.
-```
-
 | Prefix                | Output							                                          |
 | :-----------------    | ------------------------------------------------------------- |
 | `imrcss`              | import './index.css';                                         |
 | `imrmcss`             | import './index.module.css';                                  |
 | `imrcom`              | import App from './App';                                      |
 
-```shell
 Code Snippets and it's Output.
-```
-
 | Prefix  | Output                                                                   |
 | :------ | ------------------------------------------------------------------------ |
 | `rdr`   | Add ReactDOM Render                                                      |
@@ -119,5 +106,16 @@ Code Snippets and it's Output.
 | `rdse`  | Add getDerivedStateFromError () to Class Component                       |
 | `rcdc`  | Add componentDidCatch () to Class Component                              |
 | `recb`  | Add ErrorBoundary Component Boilerplate																	 |
+
+# Change Log
+```shell
+[1.0.1]
+- Added more commonly used ReactJS Snippets such as imports, Hooks, ReactDOM and more.
+- We will add more snippets in the future release.
+
+[1.0.0]
+- Initial release of commonly used React Snippets.
+- We will add more snippets in the future release.
+```
 
 #### Made with ❤️ on a Blue Planet called The Earth. By [Raju Dhami](https://github.com/Raju)
