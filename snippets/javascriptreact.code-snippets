@@ -1,52 +1,11 @@
 {
+	// React Import Snippets and it's Output.
 	"Import React": {
 		"prefix": "imr",
 		"body": [
 			"import React from 'react';\n"
 		],
 		"description": "Import React"
-	},
-	"Import ReactDOM": {
-		"prefix": "imrd",
-		"body": [
-			"import ReactDOM from 'react-dom';\n"
-		],
-		"description": "Import ReactDOM"
-	},
-	"Import React, { useState }": {
-		"prefix": "imrs",
-		"body": [
-			"import React, { useState } from 'react';\n"
-		],
-		"description": "Import React, { useState }"
-	},
-	"Import React, { useEffect }": {
-		"prefix": "imre",
-		"body": [
-			"import React, { useEffect } from 'react';\n"
-		],
-		"description": "Import React, { useEffect }"
-	},
-	"Import React, { useState, useEffect }": {
-		"prefix": "imrse",
-		"body": [
-			"import React, { useState, useEffect } from 'react';\n"
-		],
-		"description": "Import React, { useState, useEffect }"
-	},
-	"Import React, { useEffect, useState }": {
-		"prefix": "imres",
-		"body": [
-			"import React, { useState, useEffect } from 'react';\n"
-		],
-		"description": "Import React, { useState, useEffect }"
-	},
-	"Import PropTypes": {
-		"prefix": "imrpt",
-		"body": [
-			"import PropTypes from 'prop-types';\n"
-		],
-		"description": "Import PropTypes"
 	},
 	"Import React and Component": {
 		"prefix": "imrc",
@@ -69,12 +28,254 @@
 		],
 		"description": "Import React, { memo }"
 	},
-	"Import CSS / SCSS file": {
+	"Import React and Fragment": {
+		"prefix": "imrf",
+		"body": [
+			"import React, { Fragment } from 'react';\n"
+		],
+		"description": "Import React, { Fragment  }"
+	},
+	"Import React and Suspense": {
+		"prefix": "imrs",
+		"body": [
+			"import React, { Suspense } from 'react';\n"
+		],
+		"description": "Import React, { Suspense  }"
+	},
+	"Import React and Lazy": {
+		"prefix": "imrl",
+		"body": [
+			"import React, { lazy } from 'react';\n"
+		],
+		"description": "Import React, { lazy }"
+	},
+	"Import React, Suspense and Lazy": {
+		"prefix": "imrsl",
+		"body": [
+			"import React, { Suspense, lazy } from 'react';\n"
+		],
+		"description": "Import React, { Suspense, lazy }"
+	},
+	"Import React, Lazy and Suspense": {
+		"prefix": "imrls",
+		"body": [
+			"import React, { Suspense, lazy } from 'react';\n"
+		],
+		"description": "Import React, { Suspense, lazy }"
+	},
+	"Import React and createContext": {
+		"prefix": "imrcc",
+		"body": [
+			"import React, { createContext } from 'react';\n"
+		],
+		"description": "Import React, { createContext }"
+	},
+	"Import React and createRef": {
+		"prefix": "imrcr",
+		"body": [
+			"import React, { createRef } from 'react';\n"
+		],
+		"description": "Import React, { createRef }"
+	},
+	"Import React and forwardRef": {
+		"prefix": "imrfr",
+		"body": [
+			"import React, { forwardRef } from 'react';\n"
+		],
+		"description": "Import React, { forwardRef }"
+	},
+	"Import React and createElement": {
+		"prefix": "imrce",
+		"body": [
+			"import React, { createElement } from 'react';\n"
+		],
+		"description": "Import React, { createElement }"
+	},
+	"Import React and createFactory": {
+		"prefix": "imrcf",
+		"body": [
+			"import React, { createFactory } from 'react';\n"
+		],
+		"description": "Import React, { createFactory }"
+	},
+	"Import React and cloneElement": {
+		"prefix": "imrcle",
+		"body": [
+			"import React, { cloneElement } from 'react';\n"
+		],
+		"description": "Import React, { cloneElement }"
+	},
+	"Import React and isValidElement": {
+		"prefix": "imrve",
+		"body": [
+			"import React, { isValidElement } from 'react';\n"
+		],
+		"description": "Import React, { isValidElement }"
+	},
+	"Import React and Children": {
+		"prefix": "imrch",
+		"body": [
+			"import React, { Children } from 'react';\n"
+		],
+		"description": "Import React, { Children }"
+	},
+	"Import React and StrictMode": {
+		"prefix": "imrsm",
+		"body": [
+			"import React, { StrictMode } from 'react';\n"
+		],
+		"description": "Import React, { StrictMode }"
+	},
+	// ReactDOM Import Snippets and it's Output.
+	"Import ReactDOM": {
+		"prefix": "imrd",
+		"body": [
+			"import ReactDOM from 'react-dom';\n"
+		],
+		"description": "Import ReactDOM"
+	},
+	"Import ReactDOM and createPortal": {
+		"prefix": "imrdp",
+		"body": [
+			"import ReactDOM, { createPortal } from 'react-dom';\n"
+		],
+		"description": "Import ReactDOM, { createPortal }"
+	},
+	"Import ReactDOM and render": {
+		"prefix": "imrdr",
+		"body": [
+			"import ReactDOM, { render } from 'react-dom';\n"
+		],
+		"description": "Import ReactDOM, { render }"
+	},
+	"Import ReactDOM and hydrate": {
+		"prefix": "imrdh",
+		"body": [
+			"import ReactDOM, { hydrate } from 'react-dom';\n"
+		],
+		"description": "Import ReactDOM, { hydrate }"
+	},
+	"Import ReactDOM and unmountComponentAtNode": {
+		"prefix": "imrdu",
+		"body": [
+			"import ReactDOM, { unmountComponentAtNode } from 'react-dom';\n"
+		],
+		"description": "Import ReactDOM, { unmountComponentAtNode }"
+	},
+	"Import ReactDOM and findDOMNode": {
+		"prefix": "imrdf",
+		"body": [
+			"import ReactDOM, { findDOMNode } from 'react-dom';\n"
+		],
+		"description": "Import ReactDOM, { findDOMNode }"
+	},
+	// PropTypes Import Snippets and it's Output.
+	"Import PropTypes": {
+		"prefix": "imrpt",
+		"body": [
+			"import PropTypes from 'prop-types';\n"
+		],
+		"description": "Import PropTypes"
+	},
+	// React Hooks Import Snippets and it's Output.
+	"Import React, { useState }": {
+		"prefix": "imrus",
+		"body": [
+			"import React, { useState } from 'react';\n"
+		],
+		"description": "Import React, { useState }"
+	},
+	"Import React, { useEffect }": {
+		"prefix": "imrue",
+		"body": [
+			"import React, { useEffect } from 'react';\n"
+		],
+		"description": "Import React, { useEffect }"
+	},
+	"Import React, { useState, useEffect }": {
+		"prefix": "imrse",
+		"body": [
+			"import React, { useState, useEffect } from 'react';\n"
+		],
+		"description": "Import React, { useState, useEffect }"
+	},
+	"Import React, { useEffect, useState }": {
+		"prefix": "imres",
+		"body": [
+			"import React, { useState, useEffect } from 'react';\n"
+		],
+		"description": "Import React, { useState, useEffect }"
+	},
+	"Import React, { useContext }": {
+		"prefix": "imruc",
+		"body": [
+			"import React, { useContext } from 'react';\n"
+		],
+		"description": "Import React, { useContext }"
+	},
+	"Import React, { useReducer }": {
+		"prefix": "imrur",
+		"body": [
+			"import React, { useReducer } from 'react';\n"
+		],
+		"description": "Import React, { useReducer }"
+	},
+	"Import React, { useCallback }": {
+		"prefix": "imrucb",
+		"body": [
+			"import React, { useCallback } from 'react';\n"
+		],
+		"description": "Import React, { useCallback }"
+	},
+	"Import React, { useMemo }": {
+		"prefix": "imrum",
+		"body": [
+			"import React, { useMemo } from 'react';\n"
+		],
+		"description": "Import React, { useMemo }"
+	},
+	"Import React, { useRef }": {
+		"prefix": "imrurf",
+		"body": [
+			"import React, { useRef } from 'react';\n"
+		],
+		"description": "Import React, { useRef }"
+	},
+	"Import React, { useImperativeHandle }": {
+		"prefix": "imrui",
+		"body": [
+			"import React, { useImperativeHandle } from 'react';\n"
+		],
+		"description": "Import React, { useImperativeHandle }"
+	},
+	"Import React, { useLayoutEffect }": {
+		"prefix": "imrul",
+		"body": [
+			"import React, { useLayoutEffect } from 'react';\n"
+		],
+		"description": "Import React, { useLayoutEffect }"
+	},
+	"Import React, { useDebugValue }": {
+		"prefix": "imrud",
+		"body": [
+			"import React, { useDebugValue } from 'react';\n"
+		],
+		"description": "Import React, { useDebugValue }"
+	},
+	// Custom Import Snippets and it's Output
+	"Import CSS / SCSS / SASS / LESS file": {
 		"prefix": "imrcss",
 		"body": [
-			"import '${1:./index}.${2:}css';\n$0"
+			"import './${1:index}.${2:c}ss';\n$0"
 		],
-		"description": "Import CSS / SCSS file"
+		"description": "Import CSS / SCSS / SASS / LESS file"
+	},
+	"Import CSS / SCSS / SASS / LESS Module file": {
+		"prefix": "imrmcss",
+		"body": [
+			"import './${1:index}.module.css';\n$0"
+		],
+		"description": "Import CSS / SCSS / SASS / LESS Module file"
 	},
 	"Import Component file": {
 		"prefix": "imrcom",
@@ -83,6 +284,7 @@
 		],
 		"description": "Import Component file"
 	},
+	// Code Snippets and it's Output.
 	"ReactDOM Render": {
 		"prefix": "rdr",
 		"body": [
@@ -132,7 +334,7 @@
 			"\t\t( async () => {",
 			"\t\t\ttry {",
 			"\t\t\t\tconst ${6:response} = await ${7:``};\n",
-			"\t\t\t\t$8",
+			"\t\t\t\tset${3/(.*)/${1:/capitalize}/} ( ${6:response} );",
 			"\t\t\t} catch ( error ) {",
 			"\t\t\t\tconsole.log ( error );",
 			"\t\t\t}",
