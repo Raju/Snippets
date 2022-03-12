@@ -353,7 +353,10 @@
 	"React useMemo": {
 		"prefix": "rum",
 		"body": [
-			"useMemo ( () => ${1:function}, ${2:input} );",
+			"const memo = useMemo ( () =>",
+			"\t${1:function} ( $2 ),",
+			"\t[ ${3:dependencies} ]",
+			");",
 			"$0"
 		],
 		"description": "Add React useMemo hook"
@@ -672,5 +675,32 @@
 			"export default ${1:ErrorBoundary};"
 		],
 		"description": "Add ErrorBoundary Component Boilerplate"
+	},
+	// Form Code Snippets and it's Output.
+	"Form handleChange": {
+		"prefix": "rhce",
+		"body": [
+			"const handleChange = ( event ) => {",
+			"\tconst { target : { type, name, value, checked } } = event,",
+			"\t\tcheckInput = {",
+			"\t\t\t'checkbox' : () => console.log ( `%cCHECKBOX`, `background: #00F; padding: 0 2px;`, { name, value, checked } ),",
+			"\t\t\t'default'  : () => console.log ( `%c${ type.toUpperCase () }`, `background: #0F0; color: #000; padding: 0 2px;`, { name, value } ),",
+			"\t\t};\n",
+			"\t( checkInput[ type ] || checkInput.default ) ();\n",
+			"\t$0",
+			"};"
+		],
+		"description": "Add Form handleChange event"
+	},
+	"Form handleSubmit": {
+		"prefix": "rhse",
+		"body": [
+			"const handleSubmit = ( event ) => {",
+			"\tevent.preventDefault ();\n",
+			"\tconsole.log ( `%chandleSubmit works!`, `background: #F00; padding: 0 2px;` );\n",
+			"\t$0",
+			"};"
+		],
+		"description": "Add Form handleChange event"
 	},
 }

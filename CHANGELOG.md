@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.3]
+- Added Form handle Change and handle Submit Snippets.
+- We will add more snippets in the future release.
+
 ## [1.0.2]
 
 - Added ReactJS Hooks Snippets.

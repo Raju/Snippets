@@ -4,8 +4,8 @@ Essential collection of commonly used Snippets for ReactJS.
 # What's New
 
 ```shell
-[1.0.2]
-- Added ReactJS Hooks Snippets.
+[1.0.3]
+- Added Form handle Change and handle Submit Snippets.
 - We will add more snippets in the future release.
 ```
 
@@ -123,10 +123,21 @@ Code Snippets and it's Output.
 | `rcdc`  | Add componentDidCatch () to Class Component                              |
 | `recb`  | Add ErrorBoundary Component Boilerplate																	 |
 
+Custom Form Snippets and it's Output.
+
+| Prefix                | Output							                                          |
+| :-----------------    | ------------------------------------------------------------- |
+| `rhce`                | Add form handleChange () boilerplate event                    |
+| `rhse`                | Add form handleSubmit () boilerplate event                    |
+
 # Change Log
 
 ```shell
-## [1.0.2]
+[1.0.3]
+- Added Form handle Change and handle Submit Snippets.
+- We will add more snippets in the future release.
+
+[1.0.2]
 - Added ReactJS Hooks Snippets.
 - We will add more snippets in the future release.
 
