@@ -137,9 +137,17 @@
 	"Import ReactDOM and createPortal": {
 		"prefix": "imrdp",
 		"body": [
-			"import ReactDOM, { createPortal } from 'react-dom';\n"
+			"import ReactDOM, { createPortal } from 'react-dom';\n",
+			"// use rcp snippet to create a portal Boilerplate\n"
 		],
 		"description": "Import ReactDOM, { createPortal }"
+	},
+	"Import ReactDOM and flushSync": {
+		"prefix": "imrdf",
+		"body": [
+			"import ReactDOM, { flushSync } from 'react-dom';\n",
+		],
+		"description": "Import ReactDOM, { flushSync }"
 	},
 	"Import ReactDOM and render": {
 		"prefix": "imrdr",
@@ -675,6 +683,21 @@
 			"export default ${1:ErrorBoundary};"
 		],
 		"description": "Add ErrorBoundary Component Boilerplate"
+	},
+	"Add createPortal Boilerplate": {
+		"prefix": "rcp",
+		"body": [
+			"import ReactDOM, { createPortal } from 'react-dom';\n",
+			"const ${1:CreatePortal} = () => {",
+			"\treturn (",
+			"\t\t{createPortal(",
+			"\t\t\t${1:<p>This child is placed in the document body.</p>},",
+			"\t\t\t${2:document.body}",
+			"\t\t)}",
+			"\t);",
+			"}"
+		],
+		"description": "Add createPortal Boilerplate"
 	},
 	// Form Code Snippets and it's Output.
 	"Form handleChange": {

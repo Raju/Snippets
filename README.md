@@ -4,8 +4,8 @@ Essential collection of commonly used Snippets for ReactJS.
 # What's New
 
 ```shell
-[1.0.3]
-- Added Form handle Change and handle Submit Snippets.
+[1.0.4]
+- Added imports for createPortal (imrdp) and flushSync (imrdf) and createPortal Boilerplate (rcp).
 - We will add more snippets in the future release.
 ```
 
@@ -122,6 +122,7 @@ Code Snippets and it's Output.
 | `rdse`  | Add getDerivedStateFromError () to Class Component                       |
 | `rcdc`  | Add componentDidCatch () to Class Component                              |
 | `recb`  | Add ErrorBoundary Component Boilerplate																	 |
+| `rcp`   | Add createPortal Boilerplate																	           |
 
 Custom Form Snippets and it's Output.
 
@@ -133,6 +134,10 @@ Custom Form Snippets and it's Output.
 # Change Log
 
 ```shell
+## [1.0.4]
+- Added imports for createPortal (imrdp) and flushSync (imrdf) and createPortal Boilerplate (rcp).
+- We will add more snippets in the future release.
+
 [1.0.3]
 - Added Form handle Change and handle Submit Snippets.
 - We will add more snippets in the future release.
