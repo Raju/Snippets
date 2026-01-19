@@ -1,0 +1,62 @@
+{
+	// ============================================
+	// STYLES
+	// ============================================
+	"Import (CSS/SCSS/SASS/LESS) Stylesheet (Global)": {
+		"prefix": "imcss",
+		"body": [
+			"import \"${1:.}/${2:styles}/${3:path}.${4|css,scss,sass,less|}\";\n$0"
+		],
+		"description": "Import a global (CSS/SCSS/SASS/LESS) stylesheet. Styles will apply globally to the entire application."
+	},
+	"Import (CSS/SCSS/SASS/LESS) Stylesheet (Module)": {
+		"prefix": "imcssm",
+		"body": [
+			"import ${1:styles} from \"${2:.}/${3:path}.module.${4|css,scss,sass,less|}\";\n$0"
+		],
+		"description": "Import a scoped CSS Module. Access classes via the local styles object (e.g., styles.myClassName)."
+	},
+	// ============================================
+	// MODULES & COMPONENTS
+	// ============================================
+	"Import Default": {
+		"prefix": "imcom",
+		"body": ["import ${1:MyComponent} from \"${2:.}/${3:path}\";\n$0"],
+		"description": "Standard default import. Ideal for importing React components or main module exports."
+	},
+	"Import Named": {
+		"prefix": "imcomn",
+		"body": ["import { ${1:MyComponent} } from \"${2:.}/${3:path}\";\n$0"],
+		"description": "Standard named import. Use when a module exports multiple items (e.g., utility functions or icons)."
+	},
+	"Import Namespace (All as)": {
+		"prefix": "imcomall",
+		"body": ["import * as ${1:MyComponent} from \"${2:.}/${3:path}\";\n$0"],
+		"description": "Namespace import: Import all exports from a module as a single object (e.g., import * as Utils)."
+	},
+	"Import Side Effect": {
+		"prefix": "imse",
+		"body": ["import \"${1:path}\";\n$0"],
+		"description": "Import a module solely for its side effects (e.g., polyfills, global setup, or initialization scripts)."
+	},
+	// ============================================
+	// ASSETS & DATA
+	// ============================================
+	"Import SVG": {
+		"prefix": "imsvg",
+		"body": ["import ${1:Icon} from \"${2:.}/${3:path}.svg\";\n$0"],
+		"description": "Import an SVG file. Useful for SVG-in-JS patterns or using SVGs as image sources."
+	},
+	"Import Image": {
+		"prefix": "imimg",
+		"body": [
+			"import ${1:img} from \"${2:.}/${3:path}.${4|png,jpg,jpeg,webp|}\";\n$0"
+		],
+		"description": "Import a bitmap image file (PNG, JPG, WebP) with a flexible choice of extensions."
+	},
+	"Import JSON": {
+		"prefix": "imjson",
+		"body": ["import ${1:data} from \"${2:.}/${3:config}.json\";\n$0"],
+		"description": "Import a JSON file as a standard JavaScript object."
+	}
+}

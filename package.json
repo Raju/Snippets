@@ -1,52 +1,133 @@
 {
 	"name": "snippetz",
 	"displayName": "React Snippets",
-	"description": "Essential collection of commonly used Snippets for ReactJS.",
-	"version": "1.0.4",
+	"description": "Essential collection of commonly used imports and Snippets for ReactJS, ReactDOM, PropTypes.",
+	"version": "2.0.0",
 	"publisher": "rajudhami",
 	"icon": "images/icon.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Raju/Snippets"
 	},
-"keywords": [
-	"React",
-	"React TypeScript",
-	"React Snippets",
-	"React Code Snippets",
-	"React TypeScript Snippets",
-	"React TypeScript Code Snippets",
-	"ReactJS",
-	"ReactJS TypeScript",
-	"ReactJS Snippets",
-	"ReactJS Code Snippets",
-	"ReactJS TypeScript Snippets",
-	"ReactJS TypeScript Code Snippets"
-],
+	"keywords": [
+		"React",
+		"React TypeScript",
+		"React Snippets",
+		"React Code Snippets",
+		"React TypeScript Snippets",
+		"React TypeScript Code Snippets",
+		"ReactJS",
+		"ReactJS TypeScript",
+		"ReactJS Snippets",
+		"ReactJS Code Snippets",
+		"ReactJS TypeScript Snippets",
+		"ReactJS TypeScript Code Snippets"
+	],
 	"engines": {
-		"vscode": "^1.65.0"
+		"vscode": "^1.75.0"
 	},
 	"categories": [
-		"Snippets"
+		"Snippets",
+		"Other"
 	],
 	"contributes": {
 		"snippets": [
 			{
 				"language": "javascript",
-				"path": "./snippets/javascriptreact.code-snippets"
+				"path": "./snippets/components.code-snippets"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/imports.code-snippets"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/proptypes.code-snippets"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/react.code-snippets"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/reactdom.code-snippets"
 			},
 			{
 				"language": "javascriptreact",
-				"path": "./snippets/javascriptreact.code-snippets"
+				"path": "./snippets/components.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/imports.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/proptypes.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/react.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/reactdom.code-snippets"
 			},
 			{
 				"language": "typescript",
-				"path": "./snippets/javascriptreact.code-snippets"
+				"path": "./snippets/components.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/imports.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/proptypes.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/react.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/reactdom.code-snippets"
 			},
 			{
 				"language": "typescriptreact",
-				"path": "./snippets/javascriptreact.code-snippets"
+				"path": "./snippets/components.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/imports.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/proptypes.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/react.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/reactdom.code-snippets"
+			}
+		],
+		"commands": [
+			{
+				"command": "snippetz.mergeImports",
+				"title": "React Snippets: Merge Package Imports"
 			}
 		]
+	},
+	"activationEvents": [],
+	"main": "./out/extension.js",
+	"scripts": {
+		"compile": "tsc -p ."
+	},
+	"devDependencies": {
+		"typescript": "^4.9.0",
+		"@types/vscode": "^1.75.0",
+		"vscode": "^1.1.37"
 	}
 }

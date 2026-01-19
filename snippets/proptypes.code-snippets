@@ -1,0 +1,180 @@
+{
+	// ============================================
+	// IMPORTS
+	// ============================================
+	"Import PropTypes": {
+		"prefix": "imrpt",
+		"body": [
+			"import PropTypes from 'prop-types';\n"
+		],
+		"description": "Import the PropTypes library for runtime type checking."
+	},
+	// ============================================
+	// BASIC TYPES
+	// ============================================
+	"PropTypes String": {
+		"prefix": "pts",
+		"body": [
+			"PropTypes.string"
+		],
+		"description": "Validation: Expects a string."
+	},
+	"PropTypes Number": {
+		"prefix": "ptn",
+		"body": [
+			"PropTypes.number"
+		],
+		"description": "Validation: Expects a number."
+	},
+	"PropTypes Boolean": {
+		"prefix": "ptb",
+		"body": [
+			"PropTypes.bool"
+		],
+		"description": "Validation: Expects a boolean."
+	},
+	"PropTypes Function": {
+		"prefix": "ptf",
+		"body": [
+			"PropTypes.func"
+		],
+		"description": "Validation: Expects a function."
+	},
+	"PropTypes Array": {
+		"prefix": "pta",
+		"body": [
+			"PropTypes.array"
+		],
+		"description": "Validation: Expects an array."
+	},
+	"PropTypes Object": {
+		"prefix": "pto",
+		"body": [
+			"PropTypes.object"
+		],
+		"description": "Validation: Expects an object."
+	},
+	"PropTypes Node": {
+		"prefix": "ptnode",
+		"body": [
+			"PropTypes.node"
+		],
+		"description": "Validation: Anything that can be rendered: numbers, strings, elements or an array containing these types."
+	},
+	"PropTypes Element": {
+		"prefix": "ptel",
+		"body": [
+			"PropTypes.element"
+		],
+		"description": "Validation: Expects a single React element."
+	},
+	// ============================================
+	// COMPLEX TYPES
+	// ============================================
+	"PropTypes One Of": {
+		"prefix": "ptoo",
+		"body": [
+			"PropTypes.oneOf(['${1:option1}', '${2:option2}'])"
+		],
+		"description": "Validation: Expects the prop to be limited to specific values (Enum)."
+	},
+	"PropTypes One Of Type": {
+		"prefix": "ptoot",
+		"body": [
+			"PropTypes.oneOfType([",
+			"\t${1:PropTypes.string},",
+			"\t${2:PropTypes.number}",
+			"])"
+		],
+		"description": "Validation: An object that could be one of many types."
+	},
+	"PropTypes Array Of": {
+		"prefix": "ptao",
+		"body": [
+			"PropTypes.arrayOf(${1:PropTypes.string})"
+		],
+		"description": "Validation: An array of a certain type."
+	},
+	"PropTypes Object Of": {
+		"prefix": "ptoo",
+		"body": [
+			"PropTypes.objectOf(${1:PropTypes.number})"
+		],
+		"description": "Validation: An object with property values of a certain type."
+	},
+	"PropTypes Shape": {
+		"prefix": "ptsh",
+		"body": [
+			"PropTypes.shape({",
+			"\t${1:property}: ${2:PropTypes.string},",
+			"})"
+		],
+		"description": "Validation: An object taking on a particular shape."
+	},
+	"PropTypes Exact": {
+		"prefix": "ptex",
+		"body": [
+			"PropTypes.exact({",
+			"\t${1:property}: ${2:PropTypes.string},",
+			"})"
+		],
+		"description": "Validation: An object with warnings on extra properties."
+	},
+	// ============================================
+	// REQUIRED VARIANTS
+	// ============================================
+	"PropTypes String Required": {
+		"prefix": "ptsr",
+		"body": [
+			"PropTypes.string.isRequired"
+		],
+		"description": "Validation: Expects a required string."
+	},
+	"PropTypes Number Required": {
+		"prefix": "ptnr",
+		"body": [
+			"PropTypes.number.isRequired"
+		],
+		"description": "Validation: Expects a required number."
+	},
+	"PropTypes Boolean Required": {
+		"prefix": "ptbr",
+		"body": [
+			"PropTypes.bool.isRequired"
+		],
+		"description": "Validation: Expects a required boolean."
+	},
+	"PropTypes Function Required": {
+		"prefix": "ptfr",
+		"body": [
+			"PropTypes.func.isRequired"
+		],
+		"description": "Validation: Expects a required function."
+	},
+	"PropTypes Array Required": {
+		"prefix": "ptar",
+		"body": [
+			"PropTypes.array.isRequired"
+		],
+		"description": "Validation: Expects a required array."
+	},
+	"PropTypes Object Required": {
+		"prefix": "ptor",
+		"body": [
+			"PropTypes.object.isRequired"
+		],
+		"description": "Validation: Expects a required object."
+	},
+	// ============================================
+	// SNIPPETS
+	// ============================================
+	"Component PropTypes": {
+		"prefix": "cpt",
+		"body": [
+			"${1:Component}.propTypes = {",
+			"\t${2:prop}: ${3:PropTypes.string},",
+			"};"
+		],
+		"description": "Boilerplate for adding propTypes to a component."
+	}
+}

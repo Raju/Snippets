@@ -1,0 +1,18 @@
+// ...existing code...
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES2019",
+        "moduleResolution": "node",
+        "outDir": "out",
+        "lib": [ "ES2020", "DOM" ],
+        "sourceMap": true,
+        "rootDir": "src",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "types": [ "vscode" ]
+    },
+    "include": [ "src" ],
+    "exclude": [ "node_modules", ".vscode-test" ]
+}

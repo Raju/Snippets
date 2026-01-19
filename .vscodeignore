@@ -1,4 +1,10 @@
 .vscode/**
 .vscode-test/**
 .gitignore
+.vscodeignore
 vsc-extension-quickstart.md
+src/**
+tsconfig.json
+generate-snippets.js
+vsix/**
+node_modules/**

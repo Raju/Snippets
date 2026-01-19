@@ -1,158 +1,209 @@
-# ReactJS Snippets
-Essential collection of commonly used Snippets for ReactJS.
+# Snippetz - Ultimate React & Web Snippets 🚀
 
-# What's New
+A premium, comprehensive collection of modern React 18/19, ReactDOM, and Web development snippets for VS Code. Supercharge your workflow with mnemonic prefixes and React 19-ready patterns.
 
-```shell
-[1.0.4]
-- Added imports for createPortal (imrdp) and flushSync (imrdf) and createPortal Boilerplate (rcp).
-- We will add more snippets in the future release.
-```
+---
 
-# Installation
+## ✨ Features
 
-### Visual Studio Marketplace
+- **React 19 Ready**: Full support for `useActionState`, `useOptimistic`, `use`, and `cache`.
+- **Resource Loading**: Modern React 19 speed optimizations (`prefetch`, `preload`, `preinit`).
+- **Smart Import Merger**: Consolidate multiple package imports into a single line with `Merge Package Imports`.
+- **Mnemonic Prefixes**: Every prefix follows a logical pattern (`imru...` for hooks, `imrd...` for ReactDOM, etc.).
+- **Pro-Tip Documentation**: Clear, actionable advice in VS Code tooltips.
 
-Launch _Quick Open_:
+---
 
-- [_Linux_](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf): `Ctrl+P`
-- [_macOS_](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf): `⌘P`
-- [_Windows_](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf): `Ctrl+P`
+## 📸 Demos
 
-Paste the following command and press `Enter`:
+### **Consolidate Imports Instantly**
+![Merge Imports Demo](images/merge-demo.gif)
+*Clean up messy import blocks with a single command.*
 
-```shell
-ext install rajudhami.snippetz
-```
+### **Rapid Component Scaffolding**
+![Boilerplate Demo](images/boilerplate-demo.png)
+*Generate full React components in seconds using mnemonic prefixes like `rfc` and `rcc`.*
 
-# Snippets
+---
 
-React Import Snippets and it's Output.
+## 🛠️ Commands
 
-| Prefix                | Output							                                          |
-| :-----------------    | ------------------------------------------------------------- |
-| `imr`                 | import React from 'react';                                    |
-| `imrc`                | import React, { Component } from 'react';                     |
-| `imrpc`               | import React, { PureComponent } from 'react';                 |
-| `imrm`                | import React, { memo } from 'react';                          |
-| `imrf`                | import React, { Fragment } from 'react';                      |
-| `imrs`                | import React, { Suspense } from 'react';                      |
-| `imrl`                | import React, { lazy } from 'react';                          |
-| `imrsl` or `imrls`    | import React, { Suspense, lazy } from 'react';                |
-| `imrcc`               | import React, { createContext } from 'react';                 |
-| `imrcr`               | import React, { createRef } from 'react';                     |
-| `imrfr`               | import React, { forwardRef } from 'react';                    |
-| `imrce`               | import React, { createElement } from 'react';                 |
-| `imrcf`               | import React, { createFactory } from 'react';                 |
-| `imrcle`              | import React, { cloneElement } from 'react';                  |
-| `imrve`               | import React, { isValidElement } from 'react';                |
-| `imrch`               | import React, { Children } from 'react';                      |
-| `imrsm`               | import React, { StrictMode } from 'react';                    |
+### **React Snippets: Merge Package Imports**
+Instantly merge multiple lines of the same package into a single professional import. Works with React, Lodash, Framer Motion, and more.
 
-ReactDOM Import Snippets and it's Output.
+- **How to use**: Open Command Palette (`Cmd/Ctrl+Shift+P`) ➔ Type **"Merge Package Imports"**.
 
-| Prefix                | Output							                                          |
-| :-----------------    | ------------------------------------------------------------- |
-| `imrd`                | import ReactDOM from 'react-dom';                             |
-| `imrdp`               | import ReactDOM, { createPortal } from 'react-dom';           |
-| `imrdr`               | import ReactDOM, { render } from 'react-dom';                 |
-| `imrdh`               | import ReactDOM, { hydrate } from 'react-dom';                |
-| `imrdu`               | import ReactDOM, { unmountComponentAtNode } from 'react-dom'; |
-| `imrdf`               | import ReactDOM, { findDOMNode } from 'react-dom';            |
+---
 
-PropTypes Import Snippets and it's Output.
+## 📦 Snippet Highlights
 
-| Prefix                | Output							                                          |
-| :-----------------    | ------------------------------------------------------------- |
-| `imrpt`               | import PropTypes from 'prop-types';                           |
+### **React Core & Hooks (`react`)**
 
-React Hooks Import Snippets and it's Output.
+| Prefix | API / Description |
+| :--- | :--- |
+| `imr` | `import React from 'react';` |
+| `imrce` | `createElement` |
+| `imrcl` | `cloneElement` |
+| `imriv` | `isValidElement` |
+| `imrchi` | `Children` utilities |
+| `imrc` | `Component` |
+| `imrpc` | `PureComponent` |
+| `imrf` | `Fragment` |
+| `imrsm` | `StrictMode` |
+| `imrp` | `Profiler` |
+| `imrs` | `Suspense` |
+| `imrl` | `lazy` |
+| `imrsl` / `imrls` | `Suspense` & `lazy` |
+| `imru` | `use` (React 19) |
+| `imrus` | `useState` |
+| `imrur` | `useReducer` |
+| `imruas` | `useActionState` (React 19) |
+| `imruo` | `useOptimistic` (React 19) |
+| `imrue` | `useEffect` |
+| `imrul` | `useLayoutEffect` |
+| `imruie` | `useInsertionEffect` |
+| `imrurf` | `useRef` |
+| `imrcr` | `createRef` |
+| `imrfr` | `forwardRef` |
+| `imrui` | `useImperativeHandle` |
+| `imrcc` | `createContext` |
+| `imruc` | `useContext` |
+| `imrcon` | `Consumer` |
+| `imrm` | `memo` |
+| `imrum` | `useMemo` |
+| `imrucb` | `useCallback` |
+| `imrst` | `startTransition` |
+| `imrut` | `useTransition` |
+| `imrudv` | `useDeferredValue` |
+| `imruses` | `useSyncExternalStore` |
+| `imruid` | `useId` |
+| `imrud` | `useDebugValue` |
+| `imrcache` | `cache` (React 19) |
+| `imract` | `act` (React 19) |
 
-| Prefix                | Output							                                          |
-| :-----------------    | ------------------------------------------------------------- |
-| `imrus`               | import React, { useState } from 'react';                      |
-| `imrue`               | import React, { useEffect } from 'react';                     |
-| `imrse` or `imres`    | import React, { useState, useEffect } from 'react';           |
-| `imruc`               | import React, { useContext } from 'react';                    |
-| `imrur`               | import React, { useReducer } from 'react';                    |
-| `imrucb`              | import React, { useCallback } from 'react';                   |
-| `imrum`               | import React, { useMemo } from 'react';                       |
-| `imrurf`              | import React, { useRef } from 'react';                        |
-| `imrui`               | import React, { useImperativeHandle } from 'react';           |
-| `imrul`               | import React, { useLayoutEffect } from 'react';               |
-| `imrud`               | import React, { useDebugValue } from 'react';                 |
+### **ReactDOM & Client (`reactdom`)**
 
-Custom Import Snippets and it's Output.
+| Prefix | API / Description |
+| :--- | :--- |
+| `imrdcr` | `createRoot` |
+| `imrdhr` | `hydrateRoot` |
+| `imrdcp` | `createPortal` |
+| `imrdfs` | `flushSync` |
+| `imrdufs` | `useFormStatus` (React 19) |
+| `imrdrfr` | `requestFormReset` (React 19) |
+| `imrdufst` | `useFormState` (Legacy) |
+| `imrdpd` | `prefetchDNS` |
+| `imrdpc` | `preconnect` |
+| `imrdpf` | `prefetch` |
+| `imrdpl` | `preload` |
+| `imrdpm` | `preloadModule` |
+| `imrdpi` | `preinit` |
+| `imrdpim` | `preinitModule` |
+| `imrdr` | `render` (Legacy) |
+| `imrdh` | `hydrate` (Legacy) |
+| `imrdfn` | `findDOMNode` |
+| `imrdu` | `unmountComponentAtNode` |
+| `imrdubu` | `unstable_batchedUpdates` |
+| `imrd` | `ReactDOM` (Default) |
+| `imrdact` | `act` (Legacy) |
 
-| Prefix                | Output							                                          |
-| :-----------------    | ------------------------------------------------------------- |
-| `imrcss`              | import './index.css';                                         |
-| `imrmcss`             | import './index.module.css';                                  |
-| `imrcom`              | import App from './App';                                      |
+### **PropTypes (`proptypes`)**
 
-Code Snippets and it's Output.
+| Prefix | API / Description |
+| :--- | :--- |
+| `imrpt` | `import PropTypes from 'prop-types';` |
+| `pts` | `PropTypes.string` |
+| `ptn` | `PropTypes.number` |
+| `ptb` | `PropTypes.bool` |
+| `ptf` | `PropTypes.func` |
+| `pta` | `PropTypes.array` |
+| `pto` | `PropTypes.object` |
+| `ptnode` | `PropTypes.node` |
+| `ptel` | `PropTypes.element` |
+| `ptoo` | `PropTypes.oneOf` |
+| `ptoot` | `PropTypes.oneOfType` |
+| `ptao` | `PropTypes.arrayOf` |
+| `ptsh` | `PropTypes.shape` |
+| `ptex` | `PropTypes.exact` |
+| `ptsr` | `string.isRequired` |
+| `ptnr` | `number.isRequired` |
+| `ptbr` | `bool.isRequired` |
+| `ptfr` | `func.isRequired` |
+| `ptar` | `array.isRequired` |
+| `ptor` | `object.isRequired` |
+| `cpt` | `Component.propTypes = { ... };` |
 
-| Prefix  | Output                                                                   |
-| :------ | ------------------------------------------------------------------------ |
-| `rdr`   | Add ReactDOM Render                                                      |
-| `rus`   | Add React useState Hook & press Tab to apply camelCase [state, setState] |
-| `rue`   | Add React useEffect Hook                                                 |
-| `ruc`   | Add React useContext Hook                                                |
-| `rur`   | Add React useReducer Hook                                                |
-| `rucb`  | Add React useCallback Hook                                               |
-| `rum`   | Add React useMemo Hook                                                   |
-| `rurf`  | Add React useRef Hook                                                    |
-| `rui`   | Add React useImperativeHandle Hook                                       |
-| `rud`   | Add React useDebugValue Hook                                             |
-| `rul`   | Add React useLayoutEffect Hook                                           |
-| `rfcb`  | Add Functional Component Boilerplate                                     |
-| `rfc`   | Add Functional Component                                                 |
-| `rccb`  | Add Class Component Boilerplate                                          |
-| `rcc`   | Add Class Component                                                      |
-| `rss`   | Add setState Object                                                      |
-| `rssf`  | Add Functional setState                                                  |
-| `rcon`  | Add constructor () to Class Component                                    |
-| `rdsp`  | Add getDerivedStateFromProps () to Class Component                       |
-| `rren`  | Add render () to Class Component                                         |
-| `rcdm`  | Add componentDidMount () to Class Component                              |
-| `rscu`  | Add shouldComponentUpdate () to Class Component                          |
-| `rsbu`  | Add getSnapshotBeforeUpdate () to Class Component                        |
-| `rcdu`  | Add componentDidUpdate () to Class Component                             |
-| `rcwu`  | Add componentWillUnmount () to Class Component                           |
-| `rdse`  | Add getDerivedStateFromError () to Class Component                       |
-| `rcdc`  | Add componentDidCatch () to Class Component                              |
-| `recb`  | Add ErrorBoundary Component Boilerplate																	 |
-| `rcp`   | Add createPortal Boilerplate																	           |
+### **Generic Imports (`imports`)**
 
-Custom Form Snippets and it's Output.
+| Prefix | API / Description |
+| :--- | :--- |
+| `imcss` | Global CSS/SCSS Import |
+| `imcssm` | CSS/SCSS Module Import |
+| `imcom` | Default Module/Component Import |
+| `imcomn` | Named Module/Component Import |
+| `imcomall` | Namespace Import (`import * as`) |
+| `imse` | Side Effect Import |
+| `imsvg` | SVG Asset Import |
+| `imimg` | Image Asset Import |
+| `imjson` | JSON Data Import |
 
-| Prefix                | Output							                                          |
-| :-----------------    | ------------------------------------------------------------- |
-| `rhce`                | Add form handleChange () boilerplate event                    |
-| `rhse`                | Add form handleSubmit () boilerplate event                    |
+### **Common Code Snippets (`components`)**
 
-# Change Log
+| Prefix | Description |
+| :--- | :--- |
+| `rus` | `useState` Hook Statement |
+| `rue` | `useEffect` with Cleanup/Async |
+| `ruc` | `useContext` Hook Statement |
+| `rur` | `useReducer` Hook Statement |
+| `rucb` | `useCallback` Hook Statement |
+| `rum` | `useMemo` Hook Statement |
+| `rurf` | `useRef` Hook Statement |
+| `rui` | `useImperativeHandle` Hook Statement |
+| `rul` | `useLayoutEffect` Hook Statement |
+| `rfc` | Functional Component |
+| `rfcb` | Functional Component + Boilerplate (State/PropTypes/Export) |
+| `rcc` | Class Component |
+| `rccb` | Class Component + Boilerplate (Lifecycle/State/PropTypes) |
+| `rss` | `this.setState` |
+| `rssf` | Functional `this.setState` |
+| `rcon` | Class Constructor |
+| `rdsp` | `getDerivedStateFromProps` |
+| `rcdm` | `componentDidMount` |
+| `rscu` | `shouldComponentUpdate` |
+| `rsbu` | `getSnapshotBeforeUpdate` |
+| `rcdu` | `componentDidUpdate` |
+| `rcwu` | `componentWillUnmount` |
+| `recb` | `ErrorBoundary` Component Boilerplate |
+| `rcp` | `createPortal` Boilerplate |
+| `rhce` | `handleChange` Form Event |
+| `rhse` | `handleSubmit` Form Event |
+| `rdcr` | `createRoot` (React 18/19 simple) |
+| `rdcrie` | `createRoot` + Imports + Error Handling |
+| `rdhr` | `hydrateRoot` (React 18/19 simple) |
+| `rdhrie` | `hydrateRoot` + Imports + Error Handling |
 
-```shell
-## [1.0.4]
-- Added imports for createPortal (imrdp) and flushSync (imrdf) and createPortal Boilerplate (rcp).
-- We will add more snippets in the future release.
+---
 
-[1.0.3]
-- Added Form handle Change and handle Submit Snippets.
-- We will add more snippets in the future release.
+## 🚀 Installation
 
-[1.0.2]
-- Added ReactJS Hooks Snippets.
-- We will add more snippets in the future release.
+1. Open **VS Code**.
+2. Go to **Extensions** (`Cmd/Ctrl+Shift+X`).
+3. Search for **"snippetz"** and click **Install**.
 
-[1.0.1]
-- Added more commonly used ReactJS Snippets such as imports, Hooks, ReactDOM and more.
-- We will add more snippets in the future release.
+---
 
-[1.0.0]
-- Initial release of commonly used React Snippets.
-- We will add more snippets in the future release.
-```
+## 🧪 Made for Developers
 
-#### Made with ❤️ on a Blue Planet called The Earth. By [Raju Dhami](https://github.com/Raju)
+This extension is built to get out of your way and let you write code faster. No more manually typing `{ useState, useEffect }` or fixing messy import blocks.
+
+**Made with ❤️ by [Raju Dhami](https://github.com/rajudhami)**
+
+---
+
+## 📜 Recent Updates
+
+### **[2.1.0] - 2026-01-19**
+- Added **React 19** specialized hooks and components.
+- Added **Web Asset** imports (SVG, Images, JSON).
+- Added **Consolidated Import Merger** command.
+- Updated all descriptions with professional React 19 guidance.
