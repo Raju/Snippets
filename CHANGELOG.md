@@ -1,6 +1,6 @@
 # Change Log
 
-## [2.0.1] - 2026-01-19
+## [2.0.2] - 2026-01-19
 - **React Core & Hooks**: Added support for React 19 APIs including `useActionState`, `useOptimistic`, `use`, `cache`, and the core `act` testing utility. Also added `Profiler` and `Consumer` component imports.
 - **Prefix Standardization**: Standardized core and hook prefixes across all files (e.g., `imru...` for hooks, `imrc...` for create functions) for better mnemonics.
 - **ReactDOM & Web APIs**: Added all React 19 Resource Loading APIs (`prefetch`, `preload`, `preinit`, etc.), `requestFormReset`, and `preloadModule`.
