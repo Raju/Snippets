@@ -196,7 +196,7 @@ Instantly merge multiple lines of the same package into a single professional im
 
 This extension is built to get out of your way and let you write code faster. No more manually typing `{ useState, useEffect }` or fixing messy import blocks.
 
-**Made with ❤️ by [Raju Dhami](https://github.com/rajudhami)**
+**Made with ❤️ by [Raju Dhami](https://github.com/raju)**
 
 ---
 
