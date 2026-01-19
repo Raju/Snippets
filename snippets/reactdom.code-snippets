@@ -5,14 +5,14 @@
 	"Import createRoot": {
 		"prefix": "imrdcr",
 		"body": [
-			"import { createRoot } from 'react-dom/client';\n"
+			"import { createRoot } from \"react-dom/client\";\n"
 		],
 		"description": "React 18/19: Create a concurrent root to display React components inside a browser DOM node."
 	},
 	"Import hydrateRoot": {
 		"prefix": "imrdhr",
 		"body": [
-			"import { hydrateRoot } from 'react-dom/client';\n"
+			"import { hydrateRoot } from \"react-dom/client\";\n"
 		],
 		"description": "React 18/19: Hydrate a container whose HTML contents were rendered by ReactDOMServer."
 	},
@@ -22,14 +22,14 @@
 	"Import createPortal": {
 		"prefix": "imrdcp",
 		"body": [
-			"import { createPortal } from 'react-dom';\n"
+			"import { createPortal } from \"react-dom\";\n"
 		],
 		"description": "Render children into a DOM node that exists outside the DOM hierarchy of the parent component (Modals, Portals)."
 	},
 	"Import flushSync": {
 		"prefix": "imrdfs",
 		"body": [
-			"import { flushSync } from 'react-dom';\n"
+			"import { flushSync } from \"react-dom\";\n"
 		],
 		"description": "Force React to flush updates synchronously. Warning: Can significantly hurt performance. Use sparingly."
 	},
@@ -39,21 +39,21 @@
 	"Import useFormStatus": {
 		"prefix": "imrdufs",
 		"body": [
-			"import { useFormStatus } from 'react-dom';\n"
+			"import { useFormStatus } from \"react-dom\";\n"
 		],
 		"description": "React 19: Access pending status of a parent <form>. Must be used in a component rendered inside the <form>."
 	},
 	"Import requestFormReset": {
 		"prefix": "imrdrfr",
 		"body": [
-			"import { requestFormReset } from 'react-dom';\n"
+			"import { requestFormReset } from \"react-dom\";\n"
 		],
 		"description": "React 19: Imperatively reset a <form> element. Clears internal React state better than native form.reset()."
 	},
 	"Import useFormState (Legacy/Bridge)": {
 		"prefix": "imrdufst",
 		"body": [
-			"import { useFormState } from 'react-dom';\n"
+			"import { useFormState } from \"react-dom\";\n"
 		],
 		"description": "DEPRECATED in React 19: Legacy name for 'useActionState'. Now imported from the core 'react' package."
 	},
@@ -63,49 +63,49 @@
 	"Import prefetchDNS": {
 		"prefix": "imrdpd",
 		"body": [
-			"import { prefetchDNS } from 'react-dom';\n"
+			"import { prefetchDNS } from \"react-dom\";\n"
 		],
 		"description": "React 19: Performance: Pre-resolve the DNS lookup for a domain you expect to connect to soon."
 	},
 	"Import preconnect": {
 		"prefix": "imrdpc",
 		"body": [
-			"import { preconnect } from 'react-dom';\n"
+			"import { preconnect } from \"react-dom\";\n"
 		],
 		"description": "React 19: Performance: Connect to a server you expect to request resources from soon (DNS + TLS)."
 	},
 	"Import prefetch": {
 		"prefix": "imrdpf",
 		"body": [
-			"import { prefetch } from 'react-dom';\n"
+			"import { prefetch } from \"react-dom\";\n"
 		],
 		"description": "React 19: Performance: Preload a low-priority resource (like an image) so it's in the browser cache."
 	},
 	"Import preload": {
 		"prefix": "imrdpl",
 		"body": [
-			"import { preload } from 'react-dom';\n"
+			"import { preload } from \"react-dom\";\n"
 		],
 		"description": "React 19: Performance: Preload a high-priority resource (like a font or CSS) required for the current page."
 	},
 	"Import preloadModule": {
 		"prefix": "imrdpm",
 		"body": [
-			"import { preloadModule } from 'react-dom';\n"
+			"import { preloadModule } from \"react-dom\";\n"
 		],
 		"description": "React 19: Performance: Preload an ES module script so it's ready when the application needs it."
 	},
 	"Import preinit": {
 		"prefix": "imrdpi",
 		"body": [
-			"import { preinit } from 'react-dom';\n"
+			"import { preinit } from \"react-dom\";\n"
 		],
 		"description": "React 19: Performance: Fetch and execute a script or style sheet immediately (blocking)."
 	},
 	"Import preinitModule": {
 		"prefix": "imrdpim",
 		"body": [
-			"import { preinitModule } from 'react-dom';\n"
+			"import { preinitModule } from \"react-dom\";\n"
 		],
 		"description": "React 19: Performance: Fetch and execute an ES module script immediately (blocking)."
 	},
@@ -115,42 +115,42 @@
 	"Import render (Legacy)": {
 		"prefix": "imrdr",
 		"body": [
-			"import { render } from 'react-dom';\n"
+			"import { render } from \"react-dom\";\n"
 		],
 		"description": "DEPRECATED: Legacy rendering API. Use 'createRoot' from 'react-dom/client' instead."
 	},
 	"Import hydrate (Legacy)": {
 		"prefix": "imrdh",
 		"body": [
-			"import { hydrate } from 'react-dom';\n"
+			"import { hydrate } from \"react-dom\";\n"
 		],
 		"description": "DEPRECATED: Legacy hydration API. Use 'hydrateRoot' from 'react-dom/client' instead."
 	},
 	"Import findDOMNode (Legacy)": {
 		"prefix": "imrdfn",
 		"body": [
-			"import { findDOMNode } from 'react-dom';\n"
+			"import { findDOMNode } from \"react-dom\";\n"
 		],
 		"description": "DEPRECATED: Legacy API. Use 'useRef' or 'forwardRef' to access DOM nodes directly."
 	},
 	"Import unmountComponentAtNode (Legacy)": {
 		"prefix": "imrdu",
 		"body": [
-			"import { unmountComponentAtNode } from 'react-dom';\n"
+			"import { unmountComponentAtNode } from \"react-dom\";\n"
 		],
 		"description": "DEPRECATED: Legacy API. Use 'root.unmount()' from a root created by createRoot() instead."
 	},
 	"Import unstable_batchedUpdates (Legacy)": {
 		"prefix": "imrdubu",
 		"body": [
-			"import { unstable_batchedUpdates } from 'react-dom';\n"
+			"import { unstable_batchedUpdates } from \"react-dom\";\n"
 		],
 		"description": "LEGACY: Manual batching. Automatic batching is built-in and default in React 18+."
 	},
 	"Import ReactDOM (Legacy)": {
 		"prefix": "imrd",
 		"body": [
-			"import ReactDOM from 'react-dom';\n"
+			"import ReactDOM from \"react-dom\";\n"
 		],
 		"description": "Legacy default import. Prefer named exports from 'react-dom/client' in modern projects."
 	},
@@ -160,7 +160,7 @@
 	"Import act (Legacy)": {
 		"prefix": "imrdact",
 		"body": [
-			"import { act } from 'react-dom/test-utils';\n"
+			"import { act } from \"react-dom/test-utils\";\n"
 		],
 		"description": "Legacy: Testing 'act' utility. Use the modern version from the core 'react' package in 19+."
 	}

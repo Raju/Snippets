@@ -1,6 +1,6 @@
 # Change Log
 
-## [2.0.0] - 2026-01-19
+## [2.0.1] - 2026-01-19
 - **React Core & Hooks**: Added support for React 19 APIs including `useActionState`, `useOptimistic`, `use`, `cache`, and the core `act` testing utility. Also added `Profiler` and `Consumer` component imports.
 - **Prefix Standardization**: Standardized core and hook prefixes across all files (e.g., `imru...` for hooks, `imrc...` for create functions) for better mnemonics.
 - **ReactDOM & Web APIs**: Added all React 19 Resource Loading APIs (`prefetch`, `preload`, `preinit`, etc.), `requestFormReset`, and `preloadModule`.
@@ -10,10 +10,6 @@
 - **Import Merger Helper**: Added `React Snippets: Merge Package Imports` command (`snippetz.mergeImports`) to consolidate multiple imports from the same package into a single line (works for any library like React, Lodash, etc.).
 - **Infrastructure**: Modernized extension to target VS Code engine `^1.75.0` and optimized `activationEvents` for faster loading and cleaner configuration.
 - **Professional Documentation**: Refined every snippet description with detailed usage context, "Pro-tips", and React 19 specific guidance.
-
-## [2.0.0]
-- Added imports for createPortal (imrdp) and flushSync (imrdf) and createPortal Boilerplate (rcp).
-- We will add more snippets in the future release.
 
 ## [1.0.4]
 - Added imports for createPortal (imrdp) and flushSync (imrdf) and createPortal Boilerplate (rcp).

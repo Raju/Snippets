@@ -17,7 +17,7 @@ A premium, comprehensive collection of modern React 18/19, ReactDOM, and Web dev
 ## 📸 Demos
 
 ### **Consolidate Imports Instantly**
-![Merge Imports Demo](images/merge-demo.gif)
+![Merge Imports Demo](images/merge-demo.png)
 *Clean up messy import blocks with a single command.*
 
 ### **Rapid Component Scaffolding**
@@ -202,7 +202,7 @@ This extension is built to get out of your way and let you write code faster. No
 
 ## 📜 Recent Updates
 
-### **[2.1.0] - 2026-01-19**
+### **[2.0.1] - 2026-01-19**
 - Added **React 19** specialized hooks and components.
 - Added **Web Asset** imports (SVG, Images, JSON).
 - Added **Consolidated Import Merger** command.

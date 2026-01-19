@@ -1,21 +1,31 @@
 {
 	// Code Snippets and it's Output.
+	"Immediately Invoked Function Expression": {
+		"prefix": "iife",
+		"body": [
+			"(() => {",
+			"\t$0",
+			"})();"
+		],
+		"description": "Add an IIFE"
+	},
 	"ReactDOM Render": {
 		"prefix": "rdr",
 		"body": [
-			"ReactDOM.render (",
+			"ReactDOM.render(",
 			"\t<React.StrictMode>",
-			"\t\t<App />",
+			"\t\t<${2:App} />",
 			"\t</React.StrictMode>,",
-			"\tdocument.getElementById ( `root` ),",
-			");"
+			"\tdocument.getElementById(\"${1:root}\")),",
+			");\n",
+			"$0"
 		],
 		"description": "Add ReactDOM Render"
 	},
 	"React useState": {
 		"prefix": "rus",
 		"body": [
-			"const [ ${1:state}, set${1/(.*)/${1:/capitalize}/} ] = useState ( ${2:initialState} );\n",
+			"const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialState});\n",
 			"$0"
 		],
 		"description": "Add React useState Hook & press Tab to apply camelCase [state, setState]"
@@ -23,24 +33,35 @@
 	"React useEffect": {
 		"prefix": "rue",
 		"body": [
-			"useEffect ( () => {",
-			"\t( async () => {",
+			"useEffect(() => {",
+			"\t$0",
+			"}, [${1:dependencies}]);\n",
+			"$0"
+		],
+		"description": "Add React useEffect Hook"
+	},
+	"React useEffect with IIFE": {
+		"prefix": "ruei",
+		"body": [
+			"useEffect(() => {",
+			"\t(async () => {",
 			"\t\ttry {",
 			"\t\t\tconst ${2:response} = await ${3:``}\n",
-			"\t\t\tconsole.log ( ${4:response} );\n",
+			"\t\t\tconsole.log(${4:response});\n",
 			"\t\t\t$0",
 			"\t\t} catch ( error ) {",
-			"\t\t\tconsole.log ( error );",
+			"\t\t\tconsole.log(error);",
 			"\t\t}",
-			"\t} ) ()",
-			"}, [ ${1:dependencies} ] );"
+			"\t}) ()",
+			"}, [${1:dependencies}]);\n",
+			"$0"
 		],
 		"description": "Add React useEffect Hook"
 	},
 	"React useContext": {
 		"prefix": "ruc",
 		"body": [
-			"const ${1:context} = useContext ( ${2:contextValue } );",
+			"const ${1:context} = useContext(${2:contextValue});\n",
 			"$0"
 		],
 		"description": "Add React useContext hook"
@@ -48,7 +69,7 @@
 	"React useReducer": {
 		"prefix": "rur",
 		"body": [
-			"const [ state, dispatch ] = useReducer ( ${1:reducer}, ${2:initialState}, ${3:init} );",
+			"const [state, dispatch] = useReducer(${1:reducer}, ${2:initialState}, ${3:init});\n",
 			"$0"
 		],
 		"description": "Add React useReducer hook"
@@ -56,21 +77,19 @@
 	"React useCallback": {
 		"prefix": "rucb",
 		"body": [
-			"useCallback (",
-			"\t() => {",
-			"\t\t${1:callback}",
-			"\t},",
-			"\t[ ${2:input} ],",
-			");"
+			"useCallback(() => {",
+			"\t${1:callback}",
+			"}, [${2:input}]);\n",
+			"$0"
 		],
 		"description": "Add React useCallback hook"
 	},
 	"React useMemo": {
 		"prefix": "rum",
 		"body": [
-			"const memo = useMemo ( () =>",
+			"const memo = useMemo(() =>",
 			"\t${1:function} ( $2 ),",
-			"\t[ ${3:dependencies} ]",
+			"\t[${3:dependencies}],",
 			");",
 			"$0"
 		],
@@ -79,7 +98,7 @@
 	"React useRef": {
 		"prefix": "rurf",
 		"body": [
-			"const ${1:ref} = useRef ();",
+			"const ${1:ref} = useRef();\n",
 			"$0"
 		],
 		"description": "Add React useRef hook"
@@ -87,20 +106,17 @@
 	"React useImperativeHandle": {
 		"prefix": "rui",
 		"body": [
-			"useImperativeHandle (",
-			"\t${1:ref},",
-			"\t() => {",
-			"\t\t${2:handler}",
-			"\t},",
-			"\t[ ${3:input} ],",
-			");"
+			"useImperativeHandle(${1:ref}, () => {",
+			"\t${2:handler}",
+			"\t}, [${3:input}]);\n",
+			"$0"
 		],
 		"description": "Add React useImperativeHandle hook"
 	},
 	"React useDebugValue": {
 		"prefix": "rud",
 		"body": [
-			"useDebugValue ( ${1:value} );",
+			"useDebugValue(${1:value});\n",
 			"$0"
 		],
 		"description": "Add React useDebugValue hook"
@@ -108,33 +124,34 @@
 	"React useLayoutEffect": {
 		"prefix": "rul",
 		"body": [
-			"useLayoutEffect ( () => {",
+			"useLayoutEffect(() => {",
 			"\t${1:effect}",
 			"\treturn () => {",
 			"\t\t${2:cleanup}",
 			"\t};",
-			"}, [ ${3:input} ] );"
+			"}, [${3:input}]);\n",
+			"$0"
 		],
 		"description": "Add React useLayoutEffect hook"
 	},
-	"Add Functional Component Boilerplate": {
-		"prefix": "rfcb",
+	"Add Functional Component Boilerplate with PropTypes": {
+		"prefix": "rfcbp",
 		"body": [
-			"import { useState, useEffect } from 'react';",
-			"import PropTypes from 'prop-types';\n",
+			"import { useState, useEffect } from \"react\";",
+			"import PropTypes from \"prop-types\";\n",
 			"const ${1:${TM_FILENAME_BASE}} = ($2) => {",
-			"\tconsole.log ( `${1:${TM_FILENAME_BASE}} works!` );\n",
-			"\tconst [ ${3:state}, set${3/(.*)/${1:/capitalize}/} ] = useState ( ${4:initialState} );\n",
-			"\tuseEffect ( () => {",
+			"\tconsole.log(`${1:${TM_FILENAME_BASE}} works!`);\n",
+			"\tconst [${3:state}, set${3/(.*)/${1:/capitalize}/}] = useState(${4:initialState});\n",
+			"\tuseEffect(() => {",
 			"\t\t( async () => {",
 			"\t\t\ttry {",
 			"\t\t\t\tconst ${6:response} = await ${7:``};\n",
-			"\t\t\t\tset${3/(.*)/${1:/capitalize}/} ( ${6:response} );",
-			"\t\t\t} catch ( error ) {",
-			"\t\t\t\tconsole.log ( error );",
+			"\t\t\t\tset${3/(.*)/${1:/capitalize}/}(${6:response});",
+			"\t\t\t} catch (error) {",
+			"\t\t\t\tconsole.log(error);",
 			"\t\t\t}",
-			"\t\t} ) ()",
-			"\t}, [ ${5:dependencies} ] );\n",
+			"\t\t}) ()",
+			"\t}, [${5:dependencies}]);\n",
 			"\treturn (",
 			"\t\t<>",
 			"\t\t\t${9:<p>react snippet works!</p>}$0",
@@ -148,11 +165,11 @@
 		],
 		"description": "Add Functional Component Boilerplate"
 	},
-	"Add Functional Component": {
+	"Add Functional Component Boilerplate": {
 		"prefix": "rfc",
 		"body": [
 			"const ${1:${TM_FILENAME_BASE}} = ($2) => {",
-			"\tconsole.log ( `react snippet works!` );\n",
+			"\tconsole.log(`react snippet works!`);\n",
 			"\treturn (",
 			"\t\t<>",
 			"\t\t\t${0:<p>react snippet works!</p>}",
@@ -163,42 +180,42 @@
 		],
 		"description": "Add Functional Component"
 	},
-	"Add Class Component Boilerplate": {
+	"Add Class Component Boilerplate with PropTypes": {
 		"prefix": "rccb",
 		"body": [
-			"import { Component } from 'react';",
-			"import PropTypes from 'prop-types';\n",
+			"import { Component } from \"react\";",
+			"import PropTypes from \"prop-types\";\n",
 			"class ${1:${TM_FILENAME_BASE}} extends Component {",
-			"\tconstructor ( props ) {",
-			"\t\tsuper ( props );\n",
+			"\tconstructor(props) {",
+			"\t\tsuper(props);\n",
 			"\t\tthis.state = {",
 			"\t\t\t${2:name}: ${3:`React Snippets`}",
 			"\t\t};",
 			"\t}\n",
 			"\tcomponentDidMount() { // Runs after the first render () lifecycle.",
-			"\t\t( async () => {",
+			"\t\t(async () => {",
 			"\t\t\ttry {",
 			"\t\t\t\tconst ${4:response} = await ${5:``};\n",
-			"\t\t\t\tthis.setState( {",
-			"\t\t\t\t\t\t${6:name}: ${7:response}",
-			"\t\t\t\t} );",
-			"\t\t\t} catch ( error ) {",
-			"\t\t\t\tconsole.log ( error );",
+			"\t\t\t\tthis.setState({",
+			"\t\t\t\t\t${6:name}: ${7:response}",
+			"\t\t\t\t});",
+			"\t\t\t} catch (error) {",
+			"\t\t\t\tconsole.log(error);",
 			"\t\t\t}",
-			"\t\t} ) ()",
+			"\t\t}) ()",
 			"\t}\n",
-			"\tshouldComponentUpdate ( nextProps, nextState ) { // Change in props & state should trigger a re-render.",
-			"\t\tconsole.log ( nextProps, nextState );\n",
+			"\tshouldComponentUpdate (nextProps, nextState) { // Change in props & state should trigger a re-render.",
+			"\t\tconsole.log (nextProps, nextState);\n",
 			"\t\treturn true; // When false, componentDidUpdate will not be called",
 			"\t}\n",
-			"\tcomponentDidUpdate ( prevProps, prevState, snapshot ) { // Called immediately after updating occurs. Not called for the initial render.",
-			"\t\tconsole.log ( prevProps, prevState, snapshot );",
+			"\tcomponentDidUpdate (prevProps, prevState, snapshot) { // Called immediately after updating occurs. Not called for the initial render.",
+			"\t\tconsole.log (prevProps, prevState, snapshot);",
 			"\t}\n",
 			"\tcomponentWillUnmount () { // Perform any necessary cleanup.",
 			"\t\treturn;",
 			"\t}\n",
 			"\trender () {",
-			"\t\tconsole.log ( `react snippet works!` );\n",
+			"\t\tconsole.log(`react snippet works!`);\n",
 			"\t\treturn (",
 			"\t\t\t<>",
 			"\t\t\t\t${8:<p>react snippet works!</p>}$0",
@@ -213,12 +230,12 @@
 		],
 		"description": "Add Class Component Boilerplate"
 	},
-	"Add Class Component": {
+	"Add Class Component Boilerplate": {
 		"prefix": "rcc",
 		"body": [
 			"class ${1:${TM_FILENAME_BASE}} extends Component {",
-			"\trender () {",
-			"\t\tconsole.log ( `react snippet works!` );\n",
+			"\trender() {",
+			"\t\tconsole.log(`react snippet works!`);\n",
 			"\t\treturn (",
 			"\t\t\t<>",
 			"\t\t\t\t${0:<p>react snippet works!</p>}",
@@ -233,16 +250,16 @@
 	"setState": {
 		"prefix": "rss",
 		"body": [
-			"this.setState ( {",
+			"this.setState({",
 			"\t${1:name}: ${2:`React Snippets`},$0",
-			"} );"
+			"});"
 		],
 		"description": "Add setState Object"
 	},
 	"Functional setState": {
 		"prefix": "rssf",
 		"body": [
-			"this.setState ( prevState => {",
+			"this.setState(prevState => {",
 			"\treturn { $1 : prevState.$1 };",
 			"});"
 		],
@@ -251,8 +268,8 @@
 	"Add constructor () to Class Component": {
 		"prefix": "rcon",
 		"body": [
-			"constructor ( props ) {",
-			"\tsuper ( props );\n",
+			"constructor(props) {",
+			"\tsuper(props);\n",
 			"\tthis.state = {",
 			"\t\t${2:name}: ${3:`React Snippets`}",
 			"\t};",
@@ -263,8 +280,8 @@
 	"getDerivedStateFromProps": {
 		"prefix": "rdsp",
 		"body": [
-			"static getDerivedStateFromProps ( props, state ) {",
-			"\tconsole.log ( props, state );$0",
+			"static getDerivedStateFromProps(props, state) {",
+			"\tconsole.log(props, state);$0",
 			"}"
 		],
 		"description": "Add getDerivedStateFromProps () to Class Component"
@@ -273,7 +290,7 @@
 		"prefix": "rren",
 		"body": [
 			"render () {",
-			"\tconsole.log ( `react snippet works!` );\n",
+			"\tconsole.log(`react snippet works!`);\n",
 			"\treturn (",
 			"\t\t<>",
 			"\t\t\t${0:<p>react snippet works!</p>}",
@@ -287,16 +304,16 @@
 		"prefix": "rcdm",
 		"body": [
 			"componentDidMount() {",
-			"\t( async () => {",
+			"\t(async () => {",
 			"\t\ttry {",
 			"\t\t\tconst ${1:response} = await ${2:``};\n",
-			"\t\t\tthis.setState( {",
+			"\t\t\tthis.setState({",
 			"\t\t\t\t${3:name}: ${4:response}",
-			"\t\t\t} );$0",
-			"\t\t} catch ( error ) {",
-			"\t\t\tconsole.log ( error );",
+			"\t\t\t});$0",
+			"\t\t} catch (error) {",
+			"\t\t\tconsole.log(error);",
 			"\t\t}",
-			"\t} ) ()",
+			"\t}) ()",
 			"}\n"
 		],
 		"description": "Add componentDidMount () to Class Component"
@@ -304,8 +321,8 @@
 	"shouldComponentUpdate": {
 		"prefix": "rscu",
 		"body": [
-			"shouldComponentUpdate ( nextProps, nextState ) {",
-			"\tconsole.log ( nextProps, nextState );$0\n",
+			"shouldComponentUpdate(nextProps, nextState) {",
+			"\tconsole.log(nextProps, nextState);$0\n",
 			"\treturn true; // When false, componentDidUpdate will not be called",
 			"}\n"
 		],
@@ -314,8 +331,8 @@
 	"getSnapshotBeforeUpdate": {
 		"prefix": "rsbu",
 		"body": [
-			"getSnapshotBeforeUpdate ( prevProps, prevState ) {",
-			"\tconsole.log ( prevProps, prevState );$0",
+			"getSnapshotBeforeUpdate(prevProps, prevState) {",
+			"\tconsole.log(prevProps, prevState);$0",
 			"}"
 		],
 		"description": "Add getSnapshotBeforeUpdate () to Class Component"
@@ -323,8 +340,8 @@
 	"componentDidUpdate": {
 		"prefix": "rcdu",
 		"body": [
-			"componentDidUpdate ( prevProps, prevState, snapshot ) {",
-			"\tconsole.log ( prevProps, prevState, snapshot );$0",
+			"componentDidUpdate(prevProps, prevState, snapshot) {",
+			"\tconsole.log(prevProps, prevState, snapshot);$0",
 			"}\n"
 		],
 		"description": "Add componentDidUpdate () to Class Component"
@@ -341,8 +358,8 @@
 	"getDerivedStateFromError": {
 		"prefix": "rdse",
 		"body": [
-			"static getDerivedStateFromError ( error ) {",
-			"\tconsole.log ( error );$0",
+			"static getDerivedStateFromError(error) {",
+			"\tconsole.log(error);$0",
 			"}"
 		],
 		"description": "Add getDerivedStateFromError () to Class Component"
@@ -350,8 +367,8 @@
 	"componentDidCatch": {
 		"prefix": "rcdc",
 		"body": [
-			"componentDidCatch ( error, info ) {",
-			"\tconsole.log ( error, info );$0",
+			"componentDidCatch(error, info) {",
+			"\tconsole.log(error, info);$0",
 			"}"
 		],
 		"description": "Add componentDidCatch () to Class Component"
@@ -359,30 +376,30 @@
 	"Add ErrorBoundary Component Boilerplate": {
 		"prefix": "recb",
 		"body": [
-			"import { Component } from 'react';\n",
+			"import { Component } from \"react\";\n",
 			"class ${1:ErrorBoundary} extends Component {",
-			"\tconstructor ( props ) {",
-			"\t\tsuper ( props );\n",
+			"\tconstructor(props) {",
+			"\t\tsuper(props);\n",
 			"\t\tthis.state = {",
 			"\t\t\t${2:hasError}: ${4:false},",
 			"\t\t\t${3:error}: ${5:null}",
 			"\t\t};",
 			"\t}\n",
-			"\tshouldComponentUpdate ( nextProps, nextState ) {",
-			"\t\tconsole.log ( nextProps, nextState );\n",
+			"\tshouldComponentUpdate(nextProps, nextState) {",
+			"\t\tconsole.log(nextProps, nextState);\n",
 			"\t\treturn true;",
 			"\t}\n",
-			"\tcomponentDidCatch ( error, errorInfo ) {",
-			"\t\tconsole.log ( error, errorInfo );",
+			"\tcomponentDidCatch(error, errorInfo) {",
+			"\t\tconsole.log(error, errorInfo);",
 			"\t}\n",
-			"\tstatic getDerivedStateFromError ( error ) {",
+			"\tstatic getDerivedStateFromError(error) {",
 			"\t\treturn {",
 			"\t\t\t${2:hasError}: ${6:true},",
 			"\t\t\t${3:error}: ${7:error}",
 			"\t\t};",
 			"\t}\n",
-			"\trender () {",
-			"\t\tconsole.log ( `react snippet works!` );\n",
+			"\trender() {",
+			"\t\tconsole.log(`react snippet works!`);\n",
 			"\t\tconst { state : { hasError, error }, props : { children } } = this;\n",
 			"\t\treturn hasError ? <h1>{ error } Error loading component!</h1> : children;$0",
 			"\t}",
@@ -394,7 +411,7 @@
 	"Add createPortal Boilerplate": {
 		"prefix": "rcp",
 		"body": [
-			"import ReactDOM, { createPortal } from 'react-dom';\n",
+			"import ReactDOM, { createPortal } from \"react-dom\";\n",
 			"const ${1:CreatePortal} = () => {",
 			"\treturn (",
 			"\t\t{createPortal(",
@@ -410,11 +427,11 @@
 	"Form handleChange": {
 		"prefix": "rhce",
 		"body": [
-			"const handleChange = ( event ) => {",
+			"const handleChange = (event) => {",
 			"\tconst { target : { type, name, value, checked } } = event,",
 			"\t\tcheckInput = {",
-			"\t\t\t'checkbox' : () => console.log ( `%cCHECKBOX`, `background: #00F; padding: 0 2px;`, { name, value, checked } ),",
-			"\t\t\t'default'  : () => console.log ( `%c${ type.toUpperCase () }`, `background: #0F0; color: #000; padding: 0 2px;`, { name, value } ),",
+			"\t\t\t'checkbox' : () => console.log(`%cCHECKBOX`, `background: #00F; padding: 0 2px;`, { name, value, checked }),",
+			"\t\t\t'default'  : () => console.log(`%c${ type.toUpperCase () }`, `background: #0F0; color: #000; padding: 0 2px;`, { name, value }),",
 			"\t\t};\n",
 			"\t( checkInput[ type ] || checkInput.default ) ();\n",
 			"\t$0",
@@ -425,13 +442,13 @@
 	"Form handleSubmit": {
 		"prefix": "rhse",
 		"body": [
-			"const handleSubmit = ( event ) => {",
+			"const handleSubmit = (event) => {",
 			"\tevent.preventDefault ();\n",
-			"\tconsole.log ( `%chandleSubmit works!`, `background: #F00; padding: 0 2px;` );\n",
+			"\tconsole.log(`%chandleSubmit works!`, `background: #F00; padding: 0 2px;`);\n",
 			"\t$0",
 			"};"
 		],
-		"description": "Add Form handleChange event"
+		"description": "Add Form handleSubmit event"
 	},
 	// ============================================
 	// CREATE ROOT VARIANTS (React 18/19)

@@ -5,35 +5,35 @@
 	"Import React (Standard)": {
 		"prefix": "imr",
 		"body": [
-			"import React from 'react';\n"
+			"import React from \"react\";\n"
 		],
 		"description": "The core entry point to the React library."
 	},
 	"Import createElement": {
 		"prefix": "imrce",
 		"body": [
-			"import React, { createElement } from 'react';\n"
+			"import React, { createElement } from \"react\";\n"
 		],
 		"description": "Create a React element programmatically (Lower-level alternative to JSX)."
 	},
 	"Import cloneElement": {
 		"prefix": "imrcl",
 		"body": [
-			"import React, { cloneElement } from 'react';\n"
+			"import React, { cloneElement } from \"react\";\n"
 		],
 		"description": "Clone a React element and merge new props into it."
 	},
 	"Import isValidElement": {
 		"prefix": "imriv",
 		"body": [
-			"import React, { isValidElement } from 'react';\n"
+			"import React, { isValidElement } from \"react\";\n"
 		],
 		"description": "Verifies if an object is a valid React element."
 	},
 	"Import Children": {
 		"prefix": "imrchi",
 		"body": [
-			"import React, { Children } from 'react';\n"
+			"import React, { Children } from \"react\";\n"
 		],
 		"description": "Higher-order utilities for manipulating the opaque 'this.props.children' data structure."
 	},
@@ -43,35 +43,35 @@
 	"Import Component": {
 		"prefix": "imrc",
 		"body": [
-			"import React, { Component } from 'react';\n"
+			"import React, { Component } from \"react\";\n"
 		],
 		"description": "Base class for creating React Class Components."
 	},
 	"Import PureComponent": {
 		"prefix": "imrpc",
 		"body": [
-			"import React, { PureComponent } from 'react';\n"
+			"import React, { PureComponent } from \"react\";\n"
 		],
 		"description": "Performance optimization: A class component that performs a shallow prop and state comparison."
 	},
 	"Import Fragment": {
 		"prefix": "imrf",
 		"body": [
-			"import React, { Fragment } from 'react';\n"
+			"import React, { Fragment } from \"react\";\n"
 		],
 		"description": "Render multiple children without adding an extra node to the DOM."
 	},
 	"Import StrictMode": {
 		"prefix": "imrsm",
 		"body": [
-			"import React, { StrictMode } from 'react';\n"
+			"import React, { StrictMode } from \"react\";\n"
 		],
 		"description": "Development-only tool that highlights potential problems by activating extra checks/warnings."
 	},
 	"Import Profiler": {
 		"prefix": "imrp",
 		"body": [
-			"import React, { Profiler } from 'react';\n"
+			"import React, { Profiler } from \"react\";\n"
 		],
 		"description": "Measure the cost of rendering your component tree for performance debugging."
 	},
@@ -81,35 +81,35 @@
 	"Import Suspense": {
 		"prefix": "imrs",
 		"body": [
-			"import React, { Suspense } from 'react';\n"
+			"import React, { Suspense } from \"react\";\n"
 		],
 		"description": "Declaratively handle loading states for child components (works with lazy loading and React 19 'use')."
 	},
 	"Import lazy": {
 		"prefix": "imrl",
 		"body": [
-			"import React, { lazy } from 'react';\n"
+			"import React, { lazy } from \"react\";\n"
 		],
 		"description": "Code-splitting: Dynamically import components to reduce initial bundle size."
 	},
 	"Import lazy and Suspense": {
 		"prefix": "imrsl",
 		"body": [
-			"import React, { Suspense, lazy } from 'react';\n"
+			"import React, { Suspense, lazy } from \"react\";\n"
 		],
 		"description": "Enable code-splitting with fallback UI. Load components on-demand while showing loading states."
 	},
 	"Import Suspense and lazy": {
 		"prefix": "imrls",
 		"body": [
-			"import React, { Suspense, lazy } from 'react';\n"
+			"import React, { Suspense, lazy } from \"react\";\n"
 		],
 		"description": "Enable code-splitting with fallback UI. Load components on-demand while showing loading states."
 	},
 	"Import use (React 19)": {
 		"prefix": "imru",
 		"body": [
-			"import { use } from 'react';\n"
+			"import { use } from \"react\";\n"
 		],
 		"description": "React 19: Reads the value of a resource like a Promise or Context directly in render."
 	},
@@ -119,28 +119,28 @@
 	"Import useState": {
 		"prefix": "imrus",
 		"body": [
-			"import React, { useState } from 'react';\n"
+			"import React, { useState } from \"react\";\n"
 		],
 		"description": "Add reactive state to functional components. Returns [state, setState]."
 	},
 	"Import useReducer": {
 		"prefix": "imrur",
 		"body": [
-			"import React, { useReducer } from 'react';\n"
+			"import React, { useReducer } from \"react\";\n"
 		],
 		"description": "Manage complex state logic using an action/reducer pattern (alternative to useState)."
 	},
 	"Import useActionState (React 19)": {
 		"prefix": "imruas",
 		"body": [
-			"import { useActionState } from 'react';\n"
+			"import { useActionState } from \"react\";\n"
 		],
 		"description": "React 19: Manage form state and handle async form actions (renamed from useFormState)."
 	},
 	"Import useOptimistic (React 19)": {
 		"prefix": "imruo",
 		"body": [
-			"import { useOptimistic } from 'react';\n"
+			"import { useOptimistic } from \"react\";\n"
 		],
 		"description": "React 19: Update the UI immediately with 'optimistic' values while waiting for an async action to finish."
 	},
@@ -150,21 +150,21 @@
 	"Import useEffect": {
 		"prefix": "imrue",
 		"body": [
-			"import React, { useEffect } from 'react';\n"
+			"import React, { useEffect } from \"react\";\n"
 		],
 		"description": "Handle side effects in functional components (Data fetching, subscriptions, manual DOM mutations)."
 	},
 	"Import useLayoutEffect": {
 		"prefix": "imrul",
 		"body": [
-			"import React, { useLayoutEffect } from 'react';\n"
+			"import React, { useLayoutEffect } from \"react\";\n"
 		],
 		"description": "Fires synchronously after all DOM mutations. Use for DOM measurement or preventing layout shifts."
 	},
 	"Import useInsertionEffect": {
 		"prefix": "imruie",
 		"body": [
-			"import React, { useInsertionEffect } from 'react';\n"
+			"import React, { useInsertionEffect } from \"react\";\n"
 		],
 		"description": "Fires before layout effects. Specialized for CSS-in-JS libraries to insert dynamic styles."
 	},
@@ -174,28 +174,28 @@
 	"Import useRef": {
 		"prefix": "imrurf",
 		"body": [
-			"import React, { useRef } from 'react';\n"
+			"import React, { useRef } from \"react\";\n"
 		],
 		"description": "Access DOM elements directly or persist mutable values across re-renders without triggering updates."
 	},
 	"Import createRef": {
 		"prefix": "imrcr",
 		"body": [
-			"import React, { createRef } from 'react';\n"
+			"import React, { createRef } from \"react\";\n"
 		],
 		"description": "Legacy: Create a ref object for class components. For functional components, use 'useRef'."
 	},
 	"Import forwardRef": {
 		"prefix": "imrfr",
 		"body": [
-			"import React, { forwardRef } from 'react';\n"
+			"import React, { forwardRef } from \"react\";\n"
 		],
 		"description": "Allows parent components to pass refs deep into child DOM elements."
 	},
 	"Import useImperativeHandle": {
 		"prefix": "imrui",
 		"body": [
-			"import React, { useImperativeHandle } from 'react';\n"
+			"import React, { useImperativeHandle } from \"react\";\n"
 		],
 		"description": "Expose custom instance values or methods to parent components via a ref."
 	},
@@ -205,21 +205,21 @@
 	"Import createContext": {
 		"prefix": "imrcc",
 		"body": [
-			"import React, { createContext } from 'react';\n"
+			"import React, { createContext } from \"react\";\n"
 		],
 		"description": "Create a Context object to share global state between components without prop drilling."
 	},
 	"Import useContext": {
 		"prefix": "imruc",
 		"body": [
-			"import React, { useContext } from 'react';\n"
+			"import React, { useContext } from \"react\";\n"
 		],
 		"description": "Hook to consume values from a React Context object."
 	},
 	"Import Consumer": {
 		"prefix": "imrcon",
 		"body": [
-			"import React, { Consumer } from 'react';\n"
+			"import React, { Consumer } from \"react\";\n"
 		],
 		"description": "Legacy: Component that subscribes to context changes. Modern alternative is 'useContext'."
 	},
@@ -229,21 +229,21 @@
 	"Import memo": {
 		"prefix": "imrm",
 		"body": [
-			"import React, { memo } from 'react';\n"
+			"import React, { memo } from \"react\";\n"
 		],
 		"description": "Optimization: Higher-order component that prevents re-rendering if props are shallowly equal."
 	},
 	"Import useMemo": {
 		"prefix": "imrum",
 		"body": [
-			"import React, { useMemo } from 'react';\n"
+			"import React, { useMemo } from \"react\";\n"
 		],
 		"description": "Performance: Caches the result of an expensive calculation between re-renders."
 	},
 	"Import useCallback": {
 		"prefix": "imrucb",
 		"body": [
-			"import React, { useCallback } from 'react';\n"
+			"import React, { useCallback } from \"react\";\n"
 		],
 		"description": "Performance: Memoizes a function definition between re-renders to prevent unnecessary updates to children."
 	},
@@ -253,21 +253,21 @@
 	"Import startTransition": {
 		"prefix": "imrst",
 		"body": [
-			"import { startTransition } from 'react';\n"
+			"import { startTransition } from \"react\";\n"
 		],
 		"description": "Non-hook version of 'useTransition' to execute lower-priority state updates."
 	},
 	"Import useTransition": {
 		"prefix": "imrut",
 		"body": [
-			"import React, { useTransition } from 'react';\n"
+			"import React, { useTransition } from \"react\";\n"
 		],
 		"description": "Concurrent Mode: Mark state updates as non-urgent transitions to keep the UI responsive."
 	},
 	"Import useDeferredValue": {
 		"prefix": "imrudv",
 		"body": [
-			"import React, { useDeferredValue } from 'react';\n"
+			"import React, { useDeferredValue } from \"react\";\n"
 		],
 		"description": "Concurrent Mode: Defer updating a non-urgent value to prioritize higher-priority UI updates."
 	},
@@ -277,7 +277,7 @@
 	"Import useSyncExternalStore": {
 		"prefix": "imruses",
 		"body": [
-			"import React, { useSyncExternalStore } from 'react';\n"
+			"import React, { useSyncExternalStore } from \"react\";\n"
 		],
 		"description": "Securely subscribe to external data stores that stay in sync with React's concurrent rendering."
 	},
@@ -287,21 +287,21 @@
 	"Import useId": {
 		"prefix": "imruid",
 		"body": [
-			"import React, { useId } from 'react';\n"
+			"import React, { useId } from \"react\";\n"
 		],
 		"description": "Generate stable, unique IDs for server-client consistency and accessibility attributes."
 	},
 	"Import useDebugValue": {
 		"prefix": "imrud",
 		"body": [
-			"import React, { useDebugValue } from 'react';\n"
+			"import React, { useDebugValue } from \"react\";\n"
 		],
 		"description": "Display custom diagnostic labels for custom hooks inside the React DevTools."
 	},
 	"Import cache (React 19)": {
 		"prefix": "imrcache",
 		"body": [
-			"import { cache } from 'react';\n"
+			"import { cache } from \"react\";\n"
 		],
 		"description": "React 19: Request-safe memoization for async functions in Server Components."
 	},
@@ -311,7 +311,7 @@
 	"Import act (Modern)": {
 		"prefix": "imract",
 		"body": [
-			"import { act } from 'react';\n"
+			"import { act } from \"react\";\n"
 		],
 		"description": "React 19: Wrap updates in tests to ensure all effects and state changes are processed before asserting."
 	}

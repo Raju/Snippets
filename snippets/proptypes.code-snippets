@@ -5,7 +5,7 @@
 	"Import PropTypes": {
 		"prefix": "imrpt",
 		"body": [
-			"import PropTypes from 'prop-types';\n"
+			"import PropTypes from \"prop-types\";\n"
 		],
 		"description": "Import the PropTypes library for runtime type checking."
 	},
